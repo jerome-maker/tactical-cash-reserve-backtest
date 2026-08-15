@@ -1,0 +1,29 @@
+# Manuscript under double-blind review -- not part of this code/data repository.
+# (The submission package, including the title page with author-identifying
+# information, is submitted separately to the journal.)
+submission_JAM/
+
+# Chinese-language thesis chapter and project working notes -- not part of the
+# public reproducibility package.
+第三章_研究方法.docx
+CLAUDE.md
+.claude/
+
+# Superseded by tactical_cash_reserve_backtest.ipynb.
+0050_tactical_cash_reserve_backtest.ipynb
+
+# OS / editor cruft
+desktop.ini
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# LaTeX build artifacts, in case any stray into this tree
+*.aux
+*.log
+*.out
+*.bcf
+*.blg
+*.run.xml
+*.synctex*
