@@ -15,6 +15,7 @@ Outputs (vector PDF, journal prefers EPS/PDF/TIFF, sans-serif labels):
   fig4_sensitivity.pdf  - allocation-ratio sensitivity, 2x3 grid (TW row / US row)
   fig5_tornado.pdf      - parameter-leverage tornado/bar chart (Taiwan only, diagnostic)
   fig6_cross_market.pdf - cross-market comparison of the strategy-vs-control gap
+  fig7_pbo.pdf           - Probability of Backtest Overfitting (CSCV, S=16), (a) TW (b) US
 """
 import os
 import numpy as np
@@ -443,3 +444,97 @@ plt.close(fig)
 print("All figures written to", OUT_DIR)
 print("TW Bench MDD:", dd_bench.min(), "TW Strat MDD:", dd_strat.min())
 print("US Bench MDD:", dd_bench_us.min(), "US Strat MDD:", dd_strat_us.min())
+
+# ============================================================
+# Figure 7 (NEW): Probability of Backtest Overfitting (PBO) via Combinatorially
+# Symmetric Cross-Validation (CSCV; Bailey, Borwein, Lopez de Prado & Zhu 2016),
+# applied to the same N=5 allocation-ratio trials as Figure 4 / Table sens.
+# Computed live at S=16 (the paper's headline block count) using the same
+# run_backtest() and price/cash-rate series already loaded above; full
+# stability check across S=10/16/20 and the follow-up regime-shift diagnostic
+# live in pbo_analysis/ (not duplicated here to keep this script focused).
+# ============================================================
+import itertools
+from math import log, sqrt
+
+SENSITIVITY_ALLOC_RATIOS = [0.10, 0.20, 0.30, 0.40, 0.50]
+PBO_S = 16
+
+
+def annualized_sharpe(weekly_excess_returns):
+    arr = np.asarray(weekly_excess_returns, dtype=float)
+    mu = arr.mean() * 52.0
+    sigma = arr.std(ddof=1) * sqrt(52.0)
+    return mu / sigma if sigma > 0 else 0.0
+
+
+def build_returns_matrix(price_weekly, cash_rate_weekly, weekly_contribution):
+    cols = {}
+    for r in SENSITIVITY_ALLOC_RATIOS:
+        bt = run_backtest(price_weekly, cash_rate_weekly, alloc_ratio=r,
+                           weekly_contribution=weekly_contribution)
+        nav = bt["total_value"] / bt["cumulative_contribution"]
+        weekly_excess = nav.pct_change() - (cash_rate_weekly / 52.0)
+        cols[f"{r:.0%}"] = weekly_excess
+    return pd.DataFrame(cols).dropna(how="any")
+
+
+def cscv_pbo(returns_matrix, S):
+    T, N = returns_matrix.shape
+    block_size = T // S
+    weeks_used = block_size * S
+    values = returns_matrix.iloc[:weeks_used].to_numpy()
+    blocks = [values[i * block_size:(i + 1) * block_size] for i in range(S)]
+
+    lambdas = []
+    for is_combo in itertools.combinations(range(S), S // 2):
+        oos_combo = tuple(b for b in range(S) if b not in is_combo)
+        is_data = np.concatenate([blocks[b] for b in is_combo], axis=0)
+        oos_data = np.concatenate([blocks[b] for b in oos_combo], axis=0)
+        sharpe_is = np.array([annualized_sharpe(is_data[:, n]) for n in range(N)])
+        sharpe_oos = np.array([annualized_sharpe(oos_data[:, n]) for n in range(N)])
+        n_star = int(np.argmax(sharpe_is))
+        rank_oos = 1 + int(np.sum(sharpe_oos < sharpe_oos[n_star]))
+        omega = rank_oos / (N + 1)
+        lambdas.append(log(omega / (1 - omega)))
+
+    lambdas = np.array(lambdas)
+    return dict(S=S, N=N, n_combinations=len(lambdas), pbo=float(np.mean(lambdas <= 0)), lambdas=lambdas)
+
+
+rm_tw = build_returns_matrix(price_weekly_tw, cash_rate_weekly_tw, WEEKLY_CONTRIBUTION_TWD)
+rm_us = build_returns_matrix(price_weekly_us, cash_rate_weekly_us, WEEKLY_CONTRIBUTION_USD)
+pbo_tw = cscv_pbo(rm_tw, S=PBO_S)
+pbo_us = cscv_pbo(rm_us, S=PBO_S)
+print(f"PBO (S={PBO_S}): Taiwan={pbo_tw['pbo']:.1%} ({pbo_tw['n_combinations']:,} combos), "
+      f"United States={pbo_us['pbo']:.1%} ({pbo_us['n_combinations']:,} combos)")
+
+
+def pbo_bars(ax, result, N):
+    omega = 1.0 / (1.0 + np.exp(-result["lambdas"]))
+    ranks = np.round(omega * (N + 1)).astype(int)
+    rank_values = np.arange(1, N + 1)
+    rank_lambdas = np.log((rank_values / (N + 1)) / (1 - rank_values / (N + 1)))
+    counts = np.array([(ranks == r).sum() for r in rank_values])
+    colors = [ORANGE if lam <= 0 else BLUE for lam in rank_lambdas]
+    ax.bar(rank_lambdas, counts, width=0.28, color=colors, edgecolor="white", linewidth=0.5)
+    for lam, c in zip(rank_lambdas, counts):
+        ax.text(lam, c + counts.max() * 0.02, f"{c / len(result['lambdas']):.0%}",
+                 ha="center", va="bottom", fontsize=6.5)
+    ax.axvline(0, color="#222222", lw=1.1, ls="--")
+    ax.set_ylim(0, counts.max() * 1.2)
+    ax.set_xlabel(r"Logit $\lambda$ (one value per possible OOS rank)")
+    ax.set_ylabel("CSCV combinations")
+
+
+fig, axes = plt.subplots(1, 2, figsize=(9.0, 3.4))
+pbo_bars(axes[0], pbo_tw, N=5)
+axes[0].set_title(f"(a) Taiwan (0050): PBO = {pbo_tw['pbo']:.1%}", loc="left", fontsize=9)
+pbo_bars(axes[1], pbo_us, N=5)
+axes[1].set_title(f"(b) United States (SPY): PBO = {pbo_us['pbo']:.1%}", loc="left", fontsize=9)
+fig.suptitle(f"Probability of Backtest Overfitting (CSCV, S={PBO_S}, N=5 allocation-ratio trials)",
+             fontsize=10, y=1.03)
+fig.tight_layout()
+fig.savefig(os.path.join(OUT_DIR, "fig7_pbo.pdf"), bbox_inches="tight")
+plt.close(fig)
+print("[saved] fig7_pbo.pdf")
