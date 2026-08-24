@@ -1,0 +1,26 @@
+{
+  "upload_type": "software",
+  "title": "Tactical cash reserve versus dollar-cost averaging: backtest code and cached data (Taiwan 0050, United States SPY)",
+  "description": "<p>Reproducible backtest of a tactical cash reserve rule against investing every periodic contribution immediately. The rule diverts a fixed share of each contribution into an interest-bearing reserve and deploys the reserve in full the first time the market closes 15 percent or more below its trailing 52-week high.</p><p>One market-agnostic engine, one set of fixed parameters and one code path are applied to Taiwan (Yuanta Taiwan Top 50 ETF, 0050, paired with the Bank of Taiwan savings deposit rate) and the United States (SPDR S&amp;P 500 ETF Trust, SPY, paired with the FDIC national rate on savings deposits) over 2 January 2009 to 3 August 2026. Setting the allocation ratio to zero reproduces the dollar-cost averaging control from the same function, so any reported gap reflects the allocation decision rather than a second implementation.</p><p>Contents: the documented companion notebook that reproduces every table and figure; cached total-return price series and savings-deposit rate series together with the raw source files they were compiled from; the publication figure script; and a probability of backtest overfitting analysis by combinatorially symmetric cross-validation at 10, 16 and 20 blocks, with the block-level diagnostics behind it.</p><p>The accompanying manuscript is under double-blind peer review and is not distributed here.</p>",
+  "creators": [
+    {
+      "name": "Chou, Jerome Chih-Lung",
+      "affiliation": "National Taiwan University of Science and Technology",
+      "orcid": "0000-0002-0790-8826"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "language": "eng",
+  "version": "v1.0.0",
+  "keywords": [
+    "backtesting",
+    "dollar-cost averaging",
+    "tactical asset allocation",
+    "cash reserve",
+    "downside risk",
+    "exchange-traded funds",
+    "probability of backtest overfitting",
+    "reproducible research"
+  ]
+}

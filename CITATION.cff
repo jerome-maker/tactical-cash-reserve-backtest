@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this code or the cached data, please cite the archived release."
+title: "Tactical cash reserve versus dollar-cost averaging: backtest code and cached data (Taiwan 0050, United States SPY)"
+abstract: >-
+  Reproducible backtest of a tactical cash reserve rule against investing every
+  periodic contribution immediately. The rule diverts a fixed share of each
+  contribution into an interest-bearing reserve and deploys the reserve in full
+  the first time the market closes 15 percent or more below its trailing 52-week
+  high. One market-agnostic engine, one set of fixed parameters and one code path
+  are applied to Taiwan (Yuanta Taiwan Top 50 ETF, 0050) and the United States
+  (SPDR S&P 500 ETF Trust, SPY) over 2 January 2009 to 3 August 2026. The archive
+  contains the documented companion notebook, the cached total-return price series
+  and savings-deposit rate series with their raw sources, the publication figure
+  scripts, and a probability of backtest overfitting (CSCV) analysis at 10, 16 and
+  20 blocks.
+type: software
+authors:
+  - family-names: Chou
+    given-names: Jerome Chih-Lung
+    orcid: "https://orcid.org/0000-0002-0790-8826"
+    affiliation: "National Taiwan University of Science and Technology"
+version: 1.0.0
+date-released: "2026-08-24"
+license: MIT
+repository-code: "https://github.com/jerome-maker/tactical-cash-reserve-backtest"
+keywords:
+  - backtesting
+  - dollar-cost averaging
+  - tactical asset allocation
+  - cash reserve
+  - downside risk
+  - exchange-traded funds
+  - probability of backtest overfitting
+  - reproducible research
