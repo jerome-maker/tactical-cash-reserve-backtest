@@ -1,5 +1,7 @@
 # A Tactical Cash Reserve Strategy versus Dollar-Cost Averaging
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22084641.svg)](https://doi.org/10.5281/zenodo.22084641)
+
 Reproducible backtest code and cached data for a study comparing a tactical cash reserve rule
 against dollar-cost averaging in Taiwan (0050) and the United States (SPY). This repository is
 the accompanying paper's data-and-code availability reference: every table and figure in the
