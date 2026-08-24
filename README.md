@@ -1,9 +1,12 @@
 # A Tactical Cash Reserve Strategy versus Dollar-Cost Averaging
 
-Reproducible backtest code and cached data for the paper *"A tactical cash reserve strategy
-versus dollar-cost averaging: evidence from Taiwan and the United States"* (submitted to the
-*Journal of Asset Management*). This repository is the paper's data-and-code availability
-reference: every table and figure in the manuscript can be regenerated from the files here.
+Reproducible backtest code and cached data for a study comparing a tactical cash reserve rule
+against dollar-cost averaging in Taiwan (0050) and the United States (SPY). This repository is
+the accompanying paper's data-and-code availability reference: every table and figure in the
+manuscript can be regenerated from the files here.
+
+The manuscript itself is under double-blind peer review, so neither it nor the target journal
+is named here; the submitted version is not distributed from this repository.
 
 ## What this strategy is
 
@@ -38,7 +41,12 @@ methodology and results.
 │   └── fdic_national_rate_archive.xlsx    #   Raw source for the pre-2021 portion of the USD rate (FDIC)
 ├── figures/
 │   ├── make_figures.py                    # Regenerates the publication-quality PDF figures below
-│   └── fig1-fig6_*.pdf                    # The manuscript's figures, as produced by that script
+│   └── fig1-fig7_*.pdf                    # The manuscript's figures, as produced by that script
+├── pbo_analysis/
+│   ├── pbo_cscv.py                        # Probability of backtest overfitting (CSCV), both markets
+│   ├── pbo_results.csv                    # PBO at 10, 16 and 20 blocks -- the stability check
+│   ├── pbo_summary.md                     # Full write-up, including the late-2018 US regime shift
+│   └── diagnostic_block_*.{csv,pdf}       # Block-by-block Sharpe winners behind that explanation
 ├── requirements.txt
 └── LICENSE
 ```
@@ -91,4 +99,5 @@ this repository.
 ## Status
 
 This paper is currently under peer review. The results and figures here match the submitted
-manuscript; they may be revised following review.
+manuscript; they may be revised following review. The sample runs from 2 January 2009 to
+3 August 2026 in both markets.

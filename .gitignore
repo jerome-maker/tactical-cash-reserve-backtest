@@ -1,7 +1,7 @@
 # Manuscript under double-blind review -- not part of this code/data repository.
-# (The submission package, including the title page with author-identifying
-# information, is submitted separately to the journal.)
-submission_JAM/
+# (Submission packages, including the title page with author-identifying
+# information, are submitted separately to the journal and never committed here.)
+submission_*/
 
 # Chinese-language thesis chapter and project working notes -- not part of the
 # public reproducibility package.

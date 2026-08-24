@@ -246,7 +246,6 @@ ax2.set_title("(b) Cash reserve balance: accumulates, then deploys in full on tr
 ax2.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m"))
 fig.autofmt_xdate()
 
-fig.suptitle("Illustration of the deployment trigger (real 2020 example, Taiwan)", fontsize=10, y=1.00)
 fig.tight_layout()
 fig.savefig(os.path.join(OUT_DIR, "fig1_mechanism.pdf"), bbox_inches="tight")
 plt.close(fig)
@@ -261,8 +260,8 @@ panels = [
     (axes[1], bt_bench_us, bt_strat_us, trigger_dates_us, "USD", "(b) United States (SPY)"),
 ]
 for ax, bench, strat, trig, ccy, title in panels:
-    ax.plot(bench.index, bench["total_value"], color=BLUE, lw=1.3, label="100% DCA (control)")
-    ax.plot(strat.index, strat["total_value"], color=ORANGE, lw=1.3, ls="--", label="Tactical reserve (20%)")
+    ax.plot(bench.index, bench["total_value"], color=BLUE, lw=1.3, label="Invest every contribution")
+    ax.plot(strat.index, strat["total_value"], color=ORANGE, lw=1.3, ls="--", label="Cash reserve, 20 percent")
     ax.scatter(trig, strat.loc[trig, "total_value"], color=ORANGE, s=18, zorder=5,
                edgecolor="white", linewidth=0.5, label="Deployment events")
     ax.set_yscale("log")
@@ -271,7 +270,6 @@ for ax, bench, strat, trig, ccy, title in panels:
     ax.legend(loc="upper left", fontsize=7, frameon=False)
     ax.set_title(title, loc="left", fontsize=9.5)
 
-fig.suptitle("Portfolio value growth, 2009–2026: (a) Taiwan, (b) United States", fontsize=10, y=1.03)
 fig.tight_layout()
 fig.savefig(os.path.join(OUT_DIR, "fig2_equity_curve.pdf"), bbox_inches="tight")
 plt.close(fig)
@@ -291,15 +289,14 @@ panels = [
 ]
 for ax, dd_b, dd_s, title in panels:
     ax.fill_between(dd_b.index, dd_b.values * 100, 0, color=BLUE, alpha=0.18, lw=0)
-    ax.plot(dd_b.index, dd_b.values * 100, color=BLUE, lw=1.0, label="100% DCA (control)")
+    ax.plot(dd_b.index, dd_b.values * 100, color=BLUE, lw=1.0, label="Invest every contribution")
     ax.fill_between(dd_s.index, dd_s.values * 100, 0, color=ORANGE, alpha=0.18, lw=0)
-    ax.plot(dd_s.index, dd_s.values * 100, color=ORANGE, lw=1.0, ls="--", label="Tactical reserve (20%)")
+    ax.plot(dd_s.index, dd_s.values * 100, color=ORANGE, lw=1.0, ls="--", label="Cash reserve, 20 percent")
     ax.set_ylabel("Drawdown from prior high (%)")
     ax.set_xlabel("Year")
     ax.legend(loc="lower left", fontsize=7, frameon=False)
     ax.set_title(title, loc="left", fontsize=9.5)
 
-fig.suptitle("Underwater chart: drawdown of contribution-adjusted net asset value", fontsize=10, y=1.03)
 fig.tight_layout()
 fig.savefig(os.path.join(OUT_DIR, "fig3_drawdown.pdf"), bbox_inches="tight")
 plt.close(fig)
@@ -320,26 +317,24 @@ fig, axes = plt.subplots(2, 3, figsize=(9.0, 5.6))
 
 row_specs = [
     (axes[0], [tw_full, tw_design, tw_oos], BLUE,
-     ["(a) Taiwan — full sample", "(b) Taiwan — design period (2009–2018)",
-      "(c) Taiwan — out-of-sample (2019–2026)"]),
+     ["(a) Taiwan — full sample", "(b) Taiwan — design period, 2009–2018",
+      "(c) Taiwan — held out, 2019–2026"]),
     (axes[1], [us_full, us_design, us_oos], AQUA,
-     ["(d) United States — full sample", "(e) United States — design period (2009–2018)",
-      "(f) United States — out-of-sample (2019–2026)"]),
+     ["(d) United States — full sample", "(e) United States — design period, 2009–2018",
+      "(f) United States — held out, 2019–2026"]),
 ]
 markers = ["o", "s", "^"]
 for row_axes, series_list, color, titles in row_specs:
     for ax, series, marker, title in zip(row_axes, series_list, markers, titles):
         ax.plot(ratios, series, marker=marker, color=color, lw=1.6, ms=4.5)
-        ax.set_xlabel("Cash-allocation ratio (%)")
-        ax.set_ylabel("CAGR (%)")
+        ax.set_xlabel("Reserve allocation ratio (percent)")
+        ax.set_ylabel("Compound annual growth rate (percent)")
         ax.set_xticks(ratios)
         ax.set_title(title, loc="left", fontsize=8)
         lo, hi = min(series), max(series)
         pad = max((hi - lo) * 0.6, 0.05)
         ax.set_ylim(lo - pad, hi + pad)
 
-fig.suptitle("CAGR vs. allocation ratio: smooth, monotonic decline in both markets and all periods\n"
-             "(each panel on its own scale; top row Taiwan, bottom row United States)", fontsize=9.5, y=1.02)
 fig.tight_layout()
 fig.savefig(os.path.join(OUT_DIR, "fig4_sensitivity.pdf"), bbox_inches="tight")
 plt.close(fig)
@@ -394,15 +389,13 @@ h = 0.32
 bars_tw = ax.barh(y + h / 2, swing_tw_o, height=h, color=BLUE, label="Taiwan (0050)")
 bars_us = ax.barh(y - h / 2, swing_us_o, height=h, color=AQUA, label="United States (SPY)")
 for b, v in zip(bars_tw, swing_tw_o):
-    ax.text(v + 0.02, b.get_y() + b.get_height() / 2, f"{v:.2f} pp", va="center", fontsize=7.5)
+    ax.text(v + 0.02, b.get_y() + b.get_height() / 2, f"{v:.2f}", va="center", fontsize=7.5)
 for b, v in zip(bars_us, swing_us_o):
-    ax.text(v + 0.02, b.get_y() + b.get_height() / 2, f"{v:.2f} pp", va="center", fontsize=7.5)
+    ax.text(v + 0.02, b.get_y() + b.get_height() / 2, f"{v:.2f}", va="center", fontsize=7.5)
 ax.set_yticks(y, labels_o, fontsize=8)
-ax.set_xlabel("Swing in the CAGR gap (percentage points)")
+ax.set_xlabel("Swing in the growth-rate difference (percentage points)")
 ax.set_xlim(0, max(max(swing_tw_o), max(swing_us_o)) * 1.2)
 ax.legend(loc="lower right", fontsize=8, frameon=False)
-ax.set_title("Diagnostic: leverage of each fixed parameter over the CAGR gap, both markets",
-             loc="left", fontsize=9.5)
 fig.tight_layout()
 fig.savefig(os.path.join(OUT_DIR, "fig5_tornado.pdf"), bbox_inches="tight")
 plt.close(fig)
@@ -419,9 +412,9 @@ sortino_gap = [0.039, 0.012]
 
 fig, axes = plt.subplots(1, 3, figsize=(9.0, 3.0))
 panel_data = [
-    (cagr_gap, "CAGR gap (pp)", "CAGR"),
-    (mdd_gap, "MDD gap (pp)\n(positive = smaller drawdown)", "MDD"),
-    (sortino_gap, "Sortino ratio gap", "Sortino ratio"),
+    (cagr_gap, "Difference (percentage points)", "Compound annual growth rate"),
+    (mdd_gap, "Difference (percentage points)\n(positive = shallower drawdown)", "Maximum drawdown"),
+    (sortino_gap, "Difference", "Sortino ratio"),
 ]
 colors_bar = [BLUE, AQUA]
 for ax, (vals, ylabel, title) in zip(axes, panel_data):
@@ -434,9 +427,6 @@ for ax, (vals, ylabel, title) in zip(axes, panel_data):
                  va="bottom" if v >= 0 else "top", fontsize=8)
     ax.tick_params(axis="x", labelsize=7.5)
 
-fig.suptitle("Cross-market comparison: strategy-vs-control gap, Taiwan vs. United States\n"
-             "(full sample, 20% allocation) — all three metrics point the same direction in both markets",
-             fontsize=9.5, y=1.06)
 fig.tight_layout()
 fig.savefig(os.path.join(OUT_DIR, "fig6_cross_market.pdf"), bbox_inches="tight")
 plt.close(fig)
@@ -523,17 +513,17 @@ def pbo_bars(ax, result, N):
                  ha="center", va="bottom", fontsize=6.5)
     ax.axvline(0, color="#222222", lw=1.1, ls="--")
     ax.set_ylim(0, counts.max() * 1.2)
-    ax.set_xlabel(r"Logit $\lambda$ (one value per possible OOS rank)")
-    ax.set_ylabel("CSCV combinations")
+    ax.set_xlabel("Logit score (one value per possible out-of-sample rank)")
+    ax.set_ylabel("Number of sample splits")
 
 
 fig, axes = plt.subplots(1, 2, figsize=(9.0, 3.4))
 pbo_bars(axes[0], pbo_tw, N=5)
-axes[0].set_title(f"(a) Taiwan (0050): PBO = {pbo_tw['pbo']:.1%}", loc="left", fontsize=9)
+axes[0].set_title(f"(a) Taiwan (0050): probability of backtest overfitting = {pbo_tw['pbo']:.1%}",
+                  loc="left", fontsize=9)
 pbo_bars(axes[1], pbo_us, N=5)
-axes[1].set_title(f"(b) United States (SPY): PBO = {pbo_us['pbo']:.1%}", loc="left", fontsize=9)
-fig.suptitle(f"Probability of Backtest Overfitting (CSCV, S={PBO_S}, N=5 allocation-ratio trials)",
-             fontsize=10, y=1.03)
+axes[1].set_title(f"(b) United States (SPY): probability of backtest overfitting = {pbo_us['pbo']:.1%}",
+                  loc="left", fontsize=9)
 fig.tight_layout()
 fig.savefig(os.path.join(OUT_DIR, "fig7_pbo.pdf"), bbox_inches="tight")
 plt.close(fig)
