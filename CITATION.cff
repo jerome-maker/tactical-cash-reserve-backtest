@@ -20,7 +20,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-0790-8826"
     affiliation: "National Taiwan University of Science and Technology"
 version: 1.0.0
-date-released: "2026-08-24"
+date-released: "2026-08-25"
 license: MIT
 repository-code: "https://github.com/jerome-maker/tactical-cash-reserve-backtest"
 keywords:
