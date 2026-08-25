@@ -1,11 +1,17 @@
-# A Tactical Cash Reserve Strategy versus Dollar-Cost Averaging
+# Cash Reserve Backtest: Taiwan, the United States and South Africa
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22084641.svg)](https://doi.org/10.5281/zenodo.22084641)
 
-Reproducible backtest code and cached data for a study comparing a tactical cash reserve rule
-against dollar-cost averaging in Taiwan (0050) and the United States (SPY). This repository is
-the accompanying paper's data-and-code availability reference: every table and figure in the
-manuscript can be regenerated from the files here.
+Reproducible backtest code and cached data for a study that prices a tactical cash reserve rule
+against dollar-cost averaging in three markets chosen because their deposit rates differ by more
+than an order of magnitude: Taiwan (0050), the United States (SPY) and South Africa (STX40).
+This repository is the accompanying paper's data-and-code availability reference: every table and
+figure in the manuscript can be regenerated from the files here.
+
+The organising result is that holding a reserve costs the deposit spread applied to the idle cash
+-- the gross price -- and the deployment trigger recovers most of it: 90% in Taiwan, 61% in the
+United States and more than all of it in South Africa, where deposits pay 6.4% and the reserve
+ends up adding return rather than costing it.
 
 The manuscript itself is under double-blind peer review, so neither it nor the target journal
 is named here; the submitted version is not distributed from this repository.
@@ -22,7 +28,10 @@ research design:
 - **Taiwan**, via the Yuanta Taiwan Top 50 ETF (`0050.TW`), with a New Taiwan Dollar savings
   deposit rate (Bank of Taiwan) as the cash-reserve rate.
 - **United States**, via the SPDR S&P 500 ETF Trust (`SPY`), with the FDIC's National Rate on
-  Savings Deposits as the cash-reserve rate.
+  Savings Deposits as the cash-reserve rate, extended back to 1993 with the Bankrate Monitor
+  national savings account rate for the long-sample check.
+- **South Africa**, via the Satrix 40 ETF (`STX40.JO`), with the IMF International Financial
+  Statistics deposit rate for South Africa as the cash-reserve rate.
 
 Every fixed parameter -- the correction threshold, lookback window, cash-reserve cap, deployment
 style, transaction cost, and the design/out-of-sample date split -- is identical in both markets;
@@ -44,6 +53,14 @@ methodology and results.
 ├── figures/
 │   ├── make_figures.py                    # Regenerates the publication-quality PDF figures below
 │   └── fig1-fig7_*.pdf                    # The manuscript's figures, as produced by that script
+├── robustness/                            # Analyses added for the three-market version
+│   ├── common.py                          #   Shared engine, plus the static-cash benchmark
+│   ├── south_africa.py                    #   Third market, incl. isolated-misprint repair
+│   ├── run_static_benchmark.py            #   Static cash holding the same average weight
+│   ├── run_bootstrap.py                   #   Stationary block bootstrap + deflated Sharpe
+│   ├── run_us_long_sample.py              #   United States 1993-2026, incl. 2008
+│   ├── build_all_results.py               #   Writes results.json, the single source of numbers
+│   └── results.json                       #   Every figure the manuscript reports
 ├── pbo_analysis/
 │   ├── pbo_cscv.py                        # Probability of backtest overfitting (CSCV), both markets
 │   ├── pbo_results.csv                    # PBO at 10, 16 and 20 blocks -- the stability check

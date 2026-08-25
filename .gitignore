@@ -27,3 +27,6 @@ __pycache__/
 *.blg
 *.run.xml
 *.synctex*
+
+# Local run logs from the robustness scripts.
+robustness/bootstrap_log.txt

@@ -1,0 +1,1437 @@
+{
+ "markets": {
+  "Taiwan (0050)": {
+   "currency": "NT$",
+   "slug": "taiwan",
+   "weeks": 906,
+   "start": "2009-01-02",
+   "end": "2026-08-07",
+   "mean_deposit_rate": 0.0035746688741721804,
+   "equity_cagr": 0.18796872341238746,
+   "static_cash_weight": 0.04419471788867504,
+   "static_realised_avg_cash": 0.04166354802917962,
+   "main": {
+    "benchmark": {
+     "CAGR (XIRR)": 0.20070748169497932,
+     "MDD": -0.34583408575714214,
+     "Sortino Ratio": 1.074184595579733,
+     "Cash Drag": 0.0,
+     "Avg. Cash Weight": 0.0,
+     "Trigger Count": 12.0,
+     "Terminal Value": 15572433.494774671
+    },
+    "tactical": {
+     "CAGR (XIRR)": 0.1999463104452208,
+     "MDD": -0.3441078648768793,
+     "Sortino Ratio": 1.1134419646859508,
+     "Cash Drag": 0.007682510547553865,
+     "Avg. Cash Weight": 0.04166354802921089,
+     "Trigger Count": 12.0,
+     "Terminal Value": 15446013.680771368
+    },
+    "static": {
+     "CAGR (XIRR)": 0.1935013896082354,
+     "MDD": -0.33171301086635085,
+     "Sortino Ratio": 1.0709296595330913,
+     "Cash Drag": 0.007682510547548098,
+     "Avg. Cash Weight": 0.04166354802917962,
+     "Trigger Count": 0.0,
+     "Terminal Value": 14416804.655955998
+    },
+    "hoard": {
+     "CAGR (XIRR)": 0.18336952287660724,
+     "MDD": -0.31833218610551806,
+     "Sortino Ratio": 1.0945570385376027,
+     "Cash Drag": 0.024442191126966148,
+     "Avg. Cash Weight": 0.13255411725816005,
+     "Trigger Count": 12.0,
+     "Terminal Value": 12938926.302898364
+    }
+   },
+   "price_of_reserve": {
+    "gross_price_pp": 0.7682510547553865,
+    "net_price_pp": 0.07611712497585243,
+    "recovered_pp": 0.692133929779534,
+    "recovered_share": 0.9009215483601407,
+    "avg_cash_weight": 0.04166354802921089,
+    "spread_pp": 18.43940545382153
+   },
+   "gaps": {
+    "tactical": {
+     "cagr_pp": -0.07611712497585243,
+     "mdd_pp": 0.1726220880262863,
+     "sortino": 0.03925736910621791
+    },
+    "static": {
+     "cagr_pp": -0.7206092086743915,
+     "mdd_pp": 1.4121074890791285,
+     "sortino": -0.003254936046641621
+    },
+    "hoard": {
+     "cagr_pp": -1.733795881837208,
+     "mdd_pp": 2.7501899651624084,
+     "sortino": 0.020372442957869774
+    }
+   },
+   "sweep": {
+    "10%": {
+     "full": 0.20032845720159873,
+     "design": 0.0787665005862747,
+     "heldout": 0.2948932381623655
+    },
+    "20%": {
+     "full": 0.1999463104452208,
+     "design": 0.07801525100051843,
+     "heldout": 0.29472977423989816
+    },
+    "30%": {
+     "full": 0.1995702843532881,
+     "design": 0.07728093867425016,
+     "heldout": 0.2945645836597837
+    },
+    "40%": {
+     "full": 0.19919270400890332,
+     "design": 0.07654358759696218,
+     "heldout": 0.29439815238696343
+    },
+    "50%": {
+     "full": 0.19859316102420718,
+     "design": 0.0752290468115538,
+     "heldout": 0.29424313836129734
+    }
+   },
+   "sweep_step_pp": {
+    "full": 0.04338240443478858,
+    "design": 0.08843634436802236,
+    "heldout": 0.016252495026704283
+   },
+   "periods": {
+    "design": {
+     "benchmark": {
+      "CAGR (XIRR)": 0.07951061165884954,
+      "MDD": -0.28910181083168507,
+      "Sortino Ratio": 0.44983302300623984,
+      "Cash Drag": 0.0,
+      "Avg. Cash Weight": 0.0,
+      "Trigger Count": 7.0,
+      "Terminal Value": 1781675.6891842515
+     },
+     "tactical": {
+      "CAGR (XIRR)": 0.07801525100051843,
+      "MDD": -0.25340820323279734,
+      "Sortino Ratio": 0.46459019210581176,
+      "Cash Drag": 0.007677411537591293,
+      "Avg. Cash Weight": 0.06920377406938731,
+      "Trigger Count": 7.0,
+      "Terminal Value": 1767894.4476926092
+     },
+     "static": {
+      "CAGR (XIRR)": 0.07642281374799986,
+      "MDD": -0.2780796510317848,
+      "Sortino Ratio": 0.4448365156567484,
+      "Cash Drag": 0.004716211394045789,
+      "Avg. Cash Weight": 0.04251167547537944,
+      "Trigger Count": 0.0,
+      "Terminal Value": 1753345.1423821885
+     },
+     "gap_cagr_pp": -0.1495360658331113,
+     "gap_mdd_pp": 3.5693607598887733,
+     "gap_sortino": 0.01475716909957192
+    },
+    "heldout": {
+     "benchmark": {
+      "CAGR (XIRR)": 0.2950555664770623,
+      "MDD": -0.34583408575714214,
+      "Sortino Ratio": 1.900839700009968,
+      "Cash Drag": 0.0,
+      "Avg. Cash Weight": 0.0,
+      "Trigger Count": 5.0,
+      "Terminal Value": 15572433.494774671
+     },
+     "tactical": {
+      "CAGR (XIRR)": 0.29472977423989816,
+      "MDD": -0.3441078648768793,
+      "Sortino Ratio": 1.9091862966099427,
+      "Cash Drag": 0.0015977607607389399,
+      "Avg. Cash Weight": 0.005389337260180576,
+      "Trigger Count": 5.0,
+      "Terminal Value": 15446013.680771368
+     },
+     "static": {
+      "CAGR (XIRR)": 0.28346941380340085,
+      "MDD": -0.33171301086635085,
+      "Sortino Ratio": 1.8984034926659699,
+      "Cash Drag": 0.012020684997396096,
+      "Avg. Cash Weight": 0.04054644921896758,
+      "Trigger Count": 0.0,
+      "Terminal Value": 14416804.655955998
+     },
+     "gap_cagr_pp": -0.03257922371641686,
+     "gap_mdd_pp": 0.1726220880262863,
+     "gap_sortino": 0.00834659659997472
+    }
+   },
+   "threshold_10pct": {
+    "CAGR (XIRR)": 0.19951273635649008,
+    "MDD": -0.3445746981177127,
+    "Sortino Ratio": 1.095293498913539,
+    "Cash Drag": 0.005023642415594659,
+    "Avg. Cash Weight": 0.027244058536353297,
+    "Trigger Count": 21.0,
+    "Terminal Value": 15374472.593128726,
+    "gap_cagr_pp": -0.11947453384892337
+   },
+   "pbo": {
+    "pbo": 0.47886557886557884,
+    "mean_lambda": 0.16421301720990705,
+    "n_combinations": 12870,
+    "blocks": 16,
+    "n_trials": 5,
+    "rank_shares": {
+     "1": 14.801864801864802,
+     "2": 29.510489510489514,
+     "3": 3.5742035742035743,
+     "4": 25.29137529137529,
+     "5": 26.82206682206682
+    }
+   },
+   "parameter_leverage": {
+    "Deployment style, 100 percent down to 10 percent": 0.9997423375837061,
+    "Correction threshold, 5 to 25 percent": 0.9071684458639206,
+    "Lookback window, 13 to 104 weeks": 0.11268319410702166,
+    "Cash reserve cap, 5 to 50 percent": 0.0017098002591170447
+   }
+  },
+  "United States (SPY)": {
+   "currency": "US$",
+   "slug": "us",
+   "weeks": 919,
+   "start": "2009-01-02",
+   "end": "2026-08-07",
+   "mean_deposit_rate": 0.0016272553071475105,
+   "equity_cagr": 0.14633361277970236,
+   "static_cash_weight": 0.04382147843950934,
+   "static_realised_avg_cash": 0.04173988816441731,
+   "main": {
+    "benchmark": {
+     "CAGR (XIRR)": 0.14802582307436263,
+     "MDD": -0.3211087356980832,
+     "Sortino Ratio": 0.8245851858355833,
+     "Cash Drag": 0.0,
+     "Avg. Cash Weight": 0.0,
+     "Trigger Count": 13.0,
+     "Terminal Value": 904711.4087221338
+    },
+    "tactical": {
+     "CAGR (XIRR)": 0.14566987711954651,
+     "MDD": -0.31941405238541776,
+     "Sortino Ratio": 0.8361968819436153,
+     "Cash Drag": 0.006040027177585557,
+     "Avg. Cash Weight": 0.04173988816442371,
+     "Trigger Count": 13.0,
+     "Terminal Value": 882597.2743570554
+    },
+    "static": {
+     "CAGR (XIRR)": 0.14197878703042788,
+     "MDD": -0.3077304819894896,
+     "Sortino Ratio": 0.8185085122765211,
+     "Cash Drag": 0.006040027177584632,
+     "Avg. Cash Weight": 0.04173988816441731,
+     "Trigger Count": 0.0,
+     "Terminal Value": 849089.4388976354
+    },
+    "hoard": {
+     "CAGR (XIRR)": 0.13233025569451376,
+     "MDD": -0.289987973325746,
+     "Sortino Ratio": 0.8138698457788431,
+     "Cash Drag": 0.017375908571662782,
+     "Avg. Cash Weight": 0.12007702270412215,
+     "Trigger Count": 13.0,
+     "Terminal Value": 767701.6195103325
+    }
+   },
+   "price_of_reserve": {
+    "gross_price_pp": 0.6040027177585557,
+    "net_price_pp": 0.23559459548161132,
+    "recovered_pp": 0.3684081222769444,
+    "recovered_share": 0.6099444778064923,
+    "avg_cash_weight": 0.04173988816442371,
+    "spread_pp": 14.470635747255484
+   },
+   "gaps": {
+    "tactical": {
+     "cagr_pp": -0.23559459548161132,
+     "mdd_pp": 0.16946833126654237,
+     "sortino": 0.011611696108032032
+    },
+    "static": {
+     "cagr_pp": -0.604703604393475,
+     "mdd_pp": 1.337825370859358,
+     "sortino": -0.006076673559062162
+    },
+    "hoard": {
+     "cagr_pp": -1.569556737984887,
+     "mdd_pp": 3.1120762372337185,
+     "sortino": -0.01071534005674013
+    }
+   },
+   "sweep": {
+    "10%": {
+     "full": 0.14685552872766802,
+     "design": 0.10827866913098338,
+     "heldout": 0.17420696126029486
+    },
+    "20%": {
+     "full": 0.14566987711954651,
+     "design": 0.1054443767906086,
+     "heldout": 0.1741170986741498
+    },
+    "30%": {
+     "full": 0.14434312917018863,
+     "design": 0.10225210139527197,
+     "heldout": 0.1740231171232442
+    },
+    "40%": {
+     "full": 0.14366599527945392,
+     "design": 0.10067390996985583,
+     "heldout": 0.17393605948606247
+    },
+    "50%": {
+     "full": 0.14326509183029656,
+     "design": 0.09978444833871639,
+     "heldout": 0.1738520626433217
+    }
+   },
+   "sweep_step_pp": {
+    "full": 0.08976092243428643,
+    "design": 0.21235551980667497,
+    "heldout": 0.008872465424328985
+   },
+   "periods": {
+    "design": {
+     "benchmark": {
+      "CAGR (XIRR)": 0.11106873024184412,
+      "MDD": -0.1901078811418747,
+      "Sortino Ratio": 0.6420819755063666,
+      "Cash Drag": 0.0,
+      "Avg. Cash Weight": 0.0,
+      "Trigger Count": 5.0,
+      "Terminal Value": 213451.3698466424
+     },
+     "tactical": {
+      "CAGR (XIRR)": 0.1054443767906086,
+      "MDD": -0.17973517712648746,
+      "Sortino Ratio": 0.6481133983510848,
+      "Cash Drag": 0.008714488428224245,
+      "Avg. Cash Weight": 0.07016357515715611,
+      "Trigger Count": 5.0,
+      "Terminal Value": 207218.47052721525
+     },
+     "static": {
+      "CAGR (XIRR)": 0.10623158978444629,
+      "MDD": -0.18257937378568545,
+      "Sortino Ratio": 0.6356388270916127,
+      "Cash Drag": 0.005199536043211219,
+      "Avg. Cash Weight": 0.041863391173787075,
+      "Trigger Count": 0.0,
+      "Terminal Value": 208079.10348107744
+     },
+     "gap_cagr_pp": -0.562435345123552,
+     "gap_mdd_pp": 1.0372704015387257,
+     "gap_sortino": 0.006031422844718248
+    },
+    "heldout": {
+     "benchmark": {
+      "CAGR (XIRR)": 0.17429449594937116,
+      "MDD": -0.3211087356980832,
+      "Sortino Ratio": 1.0155214112126876,
+      "Cash Drag": 0.0,
+      "Avg. Cash Weight": 0.0,
+      "Trigger Count": 8.0,
+      "Terminal Value": 904711.4087221338
+     },
+     "tactical": {
+      "CAGR (XIRR)": 0.1741170986741498,
+      "MDD": -0.31941405238541776,
+      "Sortino Ratio": 1.0246363576351534,
+      "Cash Drag": 0.0007397960245368983,
+      "Avg. Cash Weight": 0.004366677559370007,
+      "Trigger Count": 8.0,
+      "Terminal Value": 882597.2743570554
+     },
+     "static": {
+      "CAGR (XIRR)": 0.16707909198020018,
+      "MDD": -0.3077304819894896,
+      "Sortino Ratio": 1.0102263283845099,
+      "Cash Drag": 0.0070439980779127154,
+      "Avg. Cash Weight": 0.041577498817084786,
+      "Trigger Count": 0.0,
+      "Terminal Value": 849089.4388976354
+     },
+     "gap_cagr_pp": -0.017739727522136928,
+     "gap_mdd_pp": 0.16946833126654237,
+     "gap_sortino": 0.009114946422465797
+    }
+   },
+   "threshold_10pct": {
+    "CAGR (XIRR)": 0.14659876090549975,
+    "MDD": -0.3201328729090709,
+    "Sortino Ratio": 0.8323292344146617,
+    "Cash Drag": 0.004102392826621719,
+    "Avg. Cash Weight": 0.028349776044910693,
+    "Trigger Count": 18.0,
+    "Terminal Value": 891247.4909759687,
+    "gap_cagr_pp": -0.14270621688628748
+   },
+   "pbo": {
+    "pbo": 0.9485625485625485,
+    "mean_lambda": -1.047495641802783,
+    "n_combinations": 12870,
+    "blocks": 16,
+    "n_trials": 5,
+    "rank_shares": {
+     "1": 57.34265734265735,
+     "2": 26.899766899766895,
+     "3": 10.613830613830613,
+     "4": 2.2843822843822843,
+     "5": 2.8593628593628595
+    }
+   },
+   "parameter_leverage": {
+    "Deployment style, 100 percent down to 10 percent": 0.874649358770932,
+    "Correction threshold, 5 to 25 percent": 0.6796634886466285,
+    "Lookback window, 13 to 104 weeks": 0.011676221077386306,
+    "Cash reserve cap, 5 to 50 percent": 0.1003982667376141
+   }
+  },
+  "South Africa (STX40)": {
+   "currency": "R",
+   "slug": "south_africa",
+   "weeks": 919,
+   "start": "2009-01-02",
+   "end": "2026-08-07",
+   "mean_deposit_rate": 0.06361177910772577,
+   "equity_cagr": 0.1025950434110603,
+   "static_cash_weight": 0.08641105884837665,
+   "static_realised_avg_cash": 0.0859612080023457,
+   "main": {
+    "benchmark": {
+     "CAGR (XIRR)": 0.09779849877681049,
+     "MDD": -0.37891287103776594,
+     "Sortino Ratio": 0.03324727556570579,
+     "Cash Drag": 0.0,
+     "Avg. Cash Weight": 0.0,
+     "Trigger Count": 8.0,
+     "Terminal Value": 5383728.577387544
+    },
+    "tactical": {
+     "CAGR (XIRR)": 0.09826566654484231,
+     "MDD": -0.3468615441388937,
+     "Sortino Ratio": 0.020293119195502377,
+     "Cash Drag": 0.003351048491389396,
+     "Avg. Cash Weight": 0.08596120800234669,
+     "Trigger Count": 8.0,
+     "Terminal Value": 5409261.257600065
+    },
+    "static": {
+     "CAGR (XIRR)": 0.09562817240212501,
+     "MDD": -0.3353531407393481,
+     "Sortino Ratio": 0.0031609251256013156,
+     "Cash Drag": 0.0033510484913893577,
+     "Avg. Cash Weight": 0.0859612080023457,
+     "Trigger Count": 0.0,
+     "Terminal Value": 5266828.536084621
+    },
+    "hoard": {
+     "CAGR (XIRR)": 0.0941174123910724,
+     "MDD": -0.3143253353163501,
+     "Sortino Ratio": -0.017727319570535395,
+     "Cash Drag": 0.0054059584634214555,
+     "Avg. Cash Weight": 0.13867382734695832,
+     "Trigger Count": 8.0,
+     "Terminal Value": 5187097.650537674
+    }
+   },
+   "price_of_reserve": {
+    "gross_price_pp": 0.33510484913893956,
+    "net_price_pp": -0.046716776803182314,
+    "recovered_pp": 0.3818216259421219,
+    "recovered_share": 1.1394094323708601,
+    "avg_cash_weight": 0.08596120800234669,
+    "spread_pp": 3.898326430333453
+   },
+   "gaps": {
+    "tactical": {
+     "cagr_pp": 0.046716776803182314,
+     "mdd_pp": 3.2051326898872246,
+     "sortino": -0.012954156370203411
+    },
+    "static": {
+     "cagr_pp": -0.21703263746854773,
+     "mdd_pp": 4.3559730298417865,
+     "sortino": -0.03008635044010447
+    },
+    "hoard": {
+     "cagr_pp": -0.36810863857380943,
+     "mdd_pp": 6.4587535721415845,
+     "sortino": -0.05097459513624118
+    }
+   },
+   "sweep": {
+    "10%": {
+     "full": 0.0982826569847811,
+     "design": 0.06012149189505767,
+     "heldout": 0.12251331032086443
+    },
+    "20%": {
+     "full": 0.09826566654484231,
+     "design": 0.05974171235275537,
+     "heldout": 0.12272329854377749
+    },
+    "30%": {
+     "full": 0.09830885753833499,
+     "design": 0.05952697114046077,
+     "heldout": 0.1229312762859303
+    },
+    "40%": {
+     "full": 0.09841313820746811,
+     "design": 0.0594806132702992,
+     "heldout": 0.1231367625845627
+    },
+    "50%": {
+     "full": 0.09853231657449442,
+     "design": 0.059475739520471825,
+     "heldout": 0.12334141303750802
+    }
+   },
+   "sweep_step_pp": {
+    "full": 0.00709101173977239,
+    "design": 0.016143809364646197,
+    "heldout": 0.020702567916089723
+   },
+   "periods": {
+    "design": {
+     "benchmark": {
+      "CAGR (XIRR)": 0.05912580577872296,
+      "MDD": -0.21613856830934153,
+      "Sortino Ratio": -0.1977788387820486,
+      "Cash Drag": 0.0,
+      "Avg. Cash Weight": 0.0,
+      "Trigger Count": 3.0,
+      "Terminal Value": 1627239.5020139709
+     },
+     "tactical": {
+      "CAGR (XIRR)": 0.05974171235275537,
+      "MDD": -0.17927211169572155,
+      "Sortino Ratio": -0.26198148116166586,
+      "Cash Drag": 0.003652914025768171,
+      "Avg. Cash Weight": 0.14281555036794932,
+      "Trigger Count": 3.0,
+      "Terminal Value": 1632427.5009486615
+     },
+     "static": {
+      "CAGR (XIRR)": 0.06020010963660722,
+      "MDD": -0.1856454249873578,
+      "Sortino Ratio": -0.2312291562015966,
+      "Cash Drag": 0.002206419942468658,
+      "Avg. Cash Weight": 0.08626293315518582,
+      "Trigger Count": 0.0,
+      "Terminal Value": 1636300.4583210126
+     },
+     "gap_cagr_pp": 0.06159065740324113,
+     "gap_mdd_pp": 3.686645661361998,
+     "gap_sortino": -0.06420264237961726
+    },
+    "heldout": {
+     "benchmark": {
+      "CAGR (XIRR)": 0.12232047357694417,
+      "MDD": -0.3297199310265646,
+      "Sortino Ratio": 0.28369459999310653,
+      "Cash Drag": 0.0,
+      "Avg. Cash Weight": 0.0,
+      "Trigger Count": 5.0,
+      "Terminal Value": 5383728.577387544
+     },
+     "tactical": {
+      "CAGR (XIRR)": 0.12272329854377749,
+      "MDD": -0.3265525257560854,
+      "Sortino Ratio": 0.2858102113273896,
+      "Cash Drag": 0.0006483971819824561,
+      "Avg. Cash Weight": 0.011205624337750816,
+      "Trigger Count": 5.0,
+      "Terminal Value": 5409261.257600065
+     },
+     "static": {
+      "CAGR (XIRR)": 0.11798799021635187,
+      "MDD": -0.30057250869947494,
+      "Sortino Ratio": 0.2572010323504529,
+      "Cash Drag": 0.00495106446844906,
+      "Avg. Cash Weight": 0.08556448122707483,
+      "Trigger Count": 0.0,
+      "Terminal Value": 5266828.536084621
+     },
+     "gap_cagr_pp": 0.04028249668333178,
+     "gap_mdd_pp": 0.31674052704792066,
+     "gap_sortino": 0.002115611334283063
+    }
+   },
+   "threshold_10pct": {
+    "CAGR (XIRR)": 0.09790805919804431,
+    "MDD": -0.37276737425726036,
+    "Sortino Ratio": 0.028888118533214015,
+    "Cash Drag": 0.0009708754796292608,
+    "Avg. Cash Weight": 0.024904930281741816,
+    "Trigger Count": 31.0,
+    "Terminal Value": 5389704.659854057,
+    "gap_cagr_pp": 0.010956042123382026
+   },
+   "pbo": {
+    "pbo": 0.30808080808080807,
+    "mean_lambda": 0.681873249461821,
+    "n_combinations": 12870,
+    "blocks": 16,
+    "n_trials": 5,
+    "rank_shares": {
+     "1": 20.45066045066045,
+     "2": 5.299145299145299,
+     "3": 5.058275058275058,
+     "4": 7.187257187257187,
+     "5": 62.004662004662
+    }
+   },
+   "parameter_leverage": {
+    "Deployment style, 100 percent down to 10 percent": 0.30100643911789154,
+    "Correction threshold, 5 to 25 percent": 0.2176765846044662,
+    "Lookback window, 13 to 104 weeks": 0.08061951112826593,
+    "Cash reserve cap, 5 to 50 percent": 0.06942818637499654
+   }
+  }
+ },
+ "meta": {
+  "generated_from": "robustness/build_all_results.py",
+  "pbo_blocks": 16,
+  "alloc_ratios": [
+   "10%",
+   "20%",
+   "30%",
+   "40%",
+   "50%"
+  ],
+  "default_ratio": "20%",
+  "design_end": "2018-12-31",
+  "oos_start": "2019-01-01",
+  "buy_cost_rate": 0.0015,
+  "cash_cap_ratio": 0.2,
+  "correction_threshold": 0.15,
+  "lookback_weeks": 52
+ },
+ "bootstrap": [
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "tactical",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": -0.0761171249758524,
+   "Bootstrap mean": -0.397962338743403,
+   "CI lower (2.5%)": -1.2369759698206406,
+   "CI upper (97.5%)": -0.0108940607702285,
+   "Share of replicates with the observed sign": 0.982
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "tactical",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": 0.1726220880262863,
+   "Bootstrap mean": 1.0081813334984224,
+   "CI lower (2.5%)": 0.0653192356977353,
+   "CI upper (97.5%)": 3.6936222136554,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "tactical",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": 0.0392573691062179,
+   "Bootstrap mean": 0.0086042325763394,
+   "CI lower (2.5%)": -0.021366979352076,
+   "CI upper (97.5%)": 0.0346488559596174,
+   "Share of replicates with the observed sign": 0.76
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "static",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": -0.7206092086743915,
+   "Bootstrap mean": -0.7470207488758804,
+   "CI lower (2.5%)": -1.302535596779859,
+   "CI upper (97.5%)": -0.2952653743965274,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "static",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": 1.4121074890791283,
+   "Bootstrap mean": 1.218268955807375,
+   "CI lower (2.5%)": 0.7705465421821323,
+   "CI upper (97.5%)": 1.6904932234690269,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "static",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": -0.0032549360466416,
+   "Bootstrap mean": -0.0085755612759416,
+   "CI lower (2.5%)": -0.0162921427006058,
+   "CI upper (97.5%)": -0.0027425738612796,
+   "Share of replicates with the observed sign": 0.996
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "tactical",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": -0.0761171249758524,
+   "Bootstrap mean": -0.3553789437059634,
+   "CI lower (2.5%)": -1.119334919590858,
+   "CI upper (97.5%)": 0.0115205639527066,
+   "Share of replicates with the observed sign": 0.969
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "tactical",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": 0.1726220880262863,
+   "Bootstrap mean": 1.0090296519899402,
+   "CI lower (2.5%)": 0.0579597408001167,
+   "CI upper (97.5%)": 3.5532337774462457,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "tactical",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": 0.0392573691062179,
+   "Bootstrap mean": 0.0108713919290174,
+   "CI lower (2.5%)": -0.0200303893112249,
+   "CI upper (97.5%)": 0.0400900198183054,
+   "Share of replicates with the observed sign": 0.804
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "static",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": -0.7206092086743915,
+   "Bootstrap mean": -0.7423820045651529,
+   "CI lower (2.5%)": -1.323968898623701,
+   "CI upper (97.5%)": -0.2530861520312829,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "static",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": 1.4121074890791283,
+   "Bootstrap mean": 1.2066617053834163,
+   "CI lower (2.5%)": 0.7609320922453886,
+   "CI upper (97.5%)": 1.676515005224138,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "static",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": -0.0032549360466416,
+   "Bootstrap mean": -0.0083770028932363,
+   "CI lower (2.5%)": -0.0159115424086287,
+   "CI upper (97.5%)": -0.0022596163117266,
+   "Share of replicates with the observed sign": 0.998
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "tactical",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": -0.0761171249758524,
+   "Bootstrap mean": -0.3067686538690576,
+   "CI lower (2.5%)": -0.950986050192589,
+   "CI upper (97.5%)": 0.0115447822283319,
+   "Share of replicates with the observed sign": 0.962
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "tactical",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": 0.1726220880262863,
+   "Bootstrap mean": 0.9845296889489598,
+   "CI lower (2.5%)": 0.0635566581052618,
+   "CI upper (97.5%)": 3.512173804163336,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "tactical",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": 0.0392573691062179,
+   "Bootstrap mean": 0.0129370647430827,
+   "CI lower (2.5%)": -0.0207042682297669,
+   "CI upper (97.5%)": 0.0407526751442644,
+   "Share of replicates with the observed sign": 0.844
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "static",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": -0.7206092086743915,
+   "Bootstrap mean": -0.7489784338928304,
+   "CI lower (2.5%)": -1.3610360961333583,
+   "CI upper (97.5%)": -0.2079435411050677,
+   "Share of replicates with the observed sign": 0.998
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "static",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": 1.4121074890791283,
+   "Bootstrap mean": 1.2096559056296423,
+   "CI lower (2.5%)": 0.7999469501355425,
+   "CI upper (97.5%)": 1.6707677835890755,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "static",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": -0.0032549360466416,
+   "Bootstrap mean": -0.0083399165451371,
+   "CI lower (2.5%)": -0.016242010710467,
+   "CI upper (97.5%)": -0.0026746653090968,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "tactical",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": -0.2355945954816113,
+   "Bootstrap mean": -0.3377964307694214,
+   "CI lower (2.5%)": -1.0428252612071731,
+   "CI upper (97.5%)": 0.0105816961853485,
+   "Share of replicates with the observed sign": 0.966
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "tactical",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": 0.1694683312665423,
+   "Bootstrap mean": 0.9625674855969478,
+   "CI lower (2.5%)": 0.080644736465921,
+   "CI upper (97.5%)": 3.11156180258522,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "tactical",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": 0.011611696108032,
+   "Bootstrap mean": 0.0090439649437457,
+   "CI lower (2.5%)": -0.0173034837172585,
+   "CI upper (97.5%)": 0.031668956776206,
+   "Share of replicates with the observed sign": 0.812
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "static",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": -0.604703604393475,
+   "Bootstrap mean": -0.6175046770368567,
+   "CI lower (2.5%)": -0.9299511932494396,
+   "CI upper (97.5%)": -0.3065014884210226,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "static",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": 1.337825370859358,
+   "Bootstrap mean": 1.2346836729360018,
+   "CI lower (2.5%)": 0.7935908840410849,
+   "CI upper (97.5%)": 1.6859234159399636,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "static",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": -0.0060766735590621,
+   "Bootstrap mean": -0.007674105720342,
+   "CI lower (2.5%)": -0.0129357296991583,
+   "CI upper (97.5%)": -0.0036851609797656,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "tactical",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": -0.2355945954816113,
+   "Bootstrap mean": -0.251778833746804,
+   "CI lower (2.5%)": -0.8476640071733922,
+   "CI upper (97.5%)": 0.0365700820032338,
+   "Share of replicates with the observed sign": 0.939
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "tactical",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": 0.1694683312665423,
+   "Bootstrap mean": 0.8053377257785059,
+   "CI lower (2.5%)": 0.0682828806663368,
+   "CI upper (97.5%)": 3.005682456435089,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "tactical",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": 0.011611696108032,
+   "Bootstrap mean": 0.0107250618892616,
+   "CI lower (2.5%)": -0.0146836944596347,
+   "CI upper (97.5%)": 0.030322148828161,
+   "Share of replicates with the observed sign": 0.89
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "static",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": -0.604703604393475,
+   "Bootstrap mean": -0.6131842513068526,
+   "CI lower (2.5%)": -0.908089269284912,
+   "CI upper (97.5%)": -0.2811956094481188,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "static",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": 1.337825370859358,
+   "Bootstrap mean": 1.2203221838018277,
+   "CI lower (2.5%)": 0.7647712125949035,
+   "CI upper (97.5%)": 1.6467570977876458,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "static",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": -0.0060766735590621,
+   "Bootstrap mean": -0.0076446391244805,
+   "CI lower (2.5%)": -0.0119005270510382,
+   "CI upper (97.5%)": -0.0041485303134646,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "tactical",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": -0.2355945954816113,
+   "Bootstrap mean": -0.1857316810618021,
+   "CI lower (2.5%)": -0.668628855501008,
+   "CI upper (97.5%)": 0.0428008906672357,
+   "Share of replicates with the observed sign": 0.902
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "tactical",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": 0.1694683312665423,
+   "Bootstrap mean": 0.6736593980726409,
+   "CI lower (2.5%)": 0.0606250668904245,
+   "CI upper (97.5%)": 2.948089745734028,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "tactical",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": 0.011611696108032,
+   "Bootstrap mean": 0.0122654056603552,
+   "CI lower (2.5%)": -0.0065215525832352,
+   "CI upper (97.5%)": 0.0297909595073567,
+   "Share of replicates with the observed sign": 0.922
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "static",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": -0.604703604393475,
+   "Bootstrap mean": -0.609426572810901,
+   "CI lower (2.5%)": -0.868231936773824,
+   "CI upper (97.5%)": -0.3379617771224549,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "static",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": 1.337825370859358,
+   "Bootstrap mean": 1.2247525722323207,
+   "CI lower (2.5%)": 0.8533649622225226,
+   "CI upper (97.5%)": 1.557064274931134,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "static",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": -0.0060766735590621,
+   "Bootstrap mean": -0.0075497980494673,
+   "CI lower (2.5%)": -0.0105760066148724,
+   "CI upper (97.5%)": -0.0047878667986123,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "tactical",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": 0.0467167768031823,
+   "Bootstrap mean": -0.0435451685576959,
+   "CI lower (2.5%)": -0.5250061740569882,
+   "CI upper (97.5%)": 0.2328379783054692,
+   "Share of replicates with the observed sign": 0.482
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "tactical",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": 3.205132689887225,
+   "Bootstrap mean": 1.3183116752064594,
+   "CI lower (2.5%)": 0.1401836556082741,
+   "CI upper (97.5%)": 3.6369067045703,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "tactical",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": -0.0129541563702034,
+   "Bootstrap mean": -0.0098946465713888,
+   "CI lower (2.5%)": -0.0328366914399253,
+   "CI upper (97.5%)": 0.0059482125947389,
+   "Share of replicates with the observed sign": 0.902
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "static",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": -0.2170326374685477,
+   "Bootstrap mean": -0.2850402028743545,
+   "CI lower (2.5%)": -0.8444757900175286,
+   "CI upper (97.5%)": 0.3140731701113842,
+   "Share of replicates with the observed sign": 0.828
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "static",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": 4.3559730298417865,
+   "Bootstrap mean": 3.0421615134142588,
+   "CI lower (2.5%)": 1.967507910817143,
+   "CI upper (97.5%)": 4.341931732511311,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "static",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 13,
+   "Replicates": 500,
+   "Observed": -0.0300863504401044,
+   "Bootstrap mean": -0.0298264008634193,
+   "CI lower (2.5%)": -0.0339828343260817,
+   "CI upper (97.5%)": -0.0255954601573049,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "tactical",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": 0.0467167768031823,
+   "Bootstrap mean": -0.0148159267503037,
+   "CI lower (2.5%)": -0.5487330938578007,
+   "CI upper (97.5%)": 0.2809701141392035,
+   "Share of replicates with the observed sign": 0.552
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "tactical",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": 3.205132689887225,
+   "Bootstrap mean": 1.5659428406803448,
+   "CI lower (2.5%)": 0.1193474206669764,
+   "CI upper (97.5%)": 4.500747155535907,
+   "Share of replicates with the observed sign": 0.997
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "tactical",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": -0.0129541563702034,
+   "Bootstrap mean": -0.0101962630544534,
+   "CI lower (2.5%)": -0.0356128718821951,
+   "CI upper (97.5%)": 0.0059004573376042,
+   "Share of replicates with the observed sign": 0.868
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "static",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": -0.2170326374685477,
+   "Bootstrap mean": -0.2682086301748814,
+   "CI lower (2.5%)": -0.8244614756386667,
+   "CI upper (97.5%)": 0.3092615408858685,
+   "Share of replicates with the observed sign": 0.816
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "static",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": 4.3559730298417865,
+   "Bootstrap mean": 2.9903069201770114,
+   "CI lower (2.5%)": 1.9287934886193865,
+   "CI upper (97.5%)": 4.346954874952946,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "static",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 26,
+   "Replicates": 1000,
+   "Observed": -0.0300863504401044,
+   "Bootstrap mean": -0.0303041579661382,
+   "CI lower (2.5%)": -0.0345101764433002,
+   "CI upper (97.5%)": -0.0259933453499806,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "tactical",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": 0.0467167768031823,
+   "Bootstrap mean": -2.37947444753126e-05,
+   "CI lower (2.5%)": -0.4684171188107626,
+   "CI upper (97.5%)": 0.2840537775625567,
+   "Share of replicates with the observed sign": 0.582
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "tactical",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": 3.205132689887225,
+   "Bootstrap mean": 1.6118369064145317,
+   "CI lower (2.5%)": 0.1317415533651378,
+   "CI upper (97.5%)": 4.082737727428169,
+   "Share of replicates with the observed sign": 0.998
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "tactical",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": -0.0129541563702034,
+   "Bootstrap mean": -0.0093895154929002,
+   "CI lower (2.5%)": -0.0354127038668689,
+   "CI upper (97.5%)": 0.0052894633960732,
+   "Share of replicates with the observed sign": 0.866
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "static",
+   "Metric": "CAGR gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": -0.2170326374685477,
+   "Bootstrap mean": -0.2904601466301126,
+   "CI lower (2.5%)": -0.7885000763015895,
+   "CI upper (97.5%)": 0.230182723855499,
+   "Share of replicates with the observed sign": 0.876
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "static",
+   "Metric": "MDD gap (pp)",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": 4.3559730298417865,
+   "Bootstrap mean": 3.0533829118733955,
+   "CI lower (2.5%)": 1.9704804447898567,
+   "CI upper (97.5%)": 4.277845306754426,
+   "Share of replicates with the observed sign": 1.0
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "static",
+   "Metric": "Sortino gap",
+   "Mean block length (weeks)": 52,
+   "Replicates": 500,
+   "Observed": -0.0300863504401044,
+   "Bootstrap mean": -0.0304549248392471,
+   "CI lower (2.5%)": -0.0340721558780794,
+   "CI upper (97.5%)": -0.0261107278688196,
+   "Share of replicates with the observed sign": 1.0
+  }
+ ],
+ "deflated_sharpe": [
+  {
+   "Sharpe (weekly)": 0.1018086800724941,
+   "Sharpe (annualised)": 0.7341528325773727,
+   "Expected max Sharpe under the null (weekly)": 0.0010284989111715,
+   "Skewness": -0.0203695239119256,
+   "Kurtosis": 4.363040387741043,
+   "Observations": 905,
+   "Number of trials": 5,
+   "Deflated Sharpe ratio": 0.9987104481687388,
+   "Market": "Taiwan (0050)"
+  },
+  {
+   "Sharpe (weekly)": 0.0799741468209594,
+   "Sharpe (annualised)": 0.5767017741489097,
+   "Expected max Sharpe under the null (weekly)": 0.0002819920272088,
+   "Skewness": -0.3033844903118741,
+   "Kurtosis": 8.309325691155822,
+   "Observations": 918,
+   "Number of trials": 5,
+   "Deflated Sharpe ratio": 0.9911298832825818,
+   "Market": "United States (SPY)"
+  },
+  {
+   "Sharpe (weekly)": 0.0020928580986937,
+   "Sharpe (annualised)": 0.0150918143742211,
+   "Expected max Sharpe under the null (weekly)": 0.0004309792462031,
+   "Skewness": -0.4509938255477649,
+   "Kurtosis": 6.930554549185299,
+   "Observations": 918,
+   "Number of trials": 5,
+   "Deflated Sharpe ratio": 0.520058789167485,
+   "Market": "South Africa (STX40)"
+  }
+ ],
+ "us_long_sample": [
+  {
+   "Period": "Full sample 1993-2026",
+   "Strategy": "Invest every contribution",
+   "CAGR (XIRR)": 0.1082268134513419,
+   "MDD": -0.6218565306030022,
+   "Sortino Ratio": 0.5962996643938481,
+   "Avg. Cash Weight": 0.0,
+   "Trigger Count": 26,
+   "Terminal Value": 3563683.3830021
+  },
+  {
+   "Period": "Full sample 1993-2026",
+   "Strategy": "Cash reserve, 20 percent",
+   "CAGR (XIRR)": 0.1063080319759086,
+   "MDD": -0.6118814185605754,
+   "Sortino Ratio": 0.5919854188530892,
+   "Avg. Cash Weight": 0.0358897152915233,
+   "Trigger Count": 26,
+   "Terminal Value": 3413341.959733716
+  },
+  {
+   "Period": "Full sample 1993-2026",
+   "Strategy": "Static cash, matched average weight",
+   "CAGR (XIRR)": 0.1049483406524468,
+   "MDD": -0.6060199761474218,
+   "Sortino Ratio": 0.5916741512686762,
+   "Avg. Cash Weight": 0.0358897152915207,
+   "Trigger Count": 0,
+   "Terminal Value": 3310857.693218578
+  },
+  {
+   "Period": "Excluded era 1993-2008",
+   "Strategy": "Invest every contribution",
+   "CAGR (XIRR)": 0.0187369057565432,
+   "MDD": -0.5663806573448901,
+   "Sortino Ratio": 0.0849607554079934,
+   "Avg. Cash Weight": 0.0,
+   "Trigger Count": 14,
+   "Terminal Value": 223113.88257322847
+  },
+  {
+   "Period": "Excluded era 1993-2008",
+   "Strategy": "Cash reserve, 20 percent",
+   "CAGR (XIRR)": 0.0128631279402851,
+   "MDD": -0.5559332448642171,
+   "Sortino Ratio": 0.0550442846465706,
+   "Avg. Cash Weight": 0.0685482859797646,
+   "Trigger Count": 14,
+   "Terminal Value": 212670.59194404597
+  },
+  {
+   "Period": "Excluded era 1993-2008",
+   "Strategy": "Static cash, matched average weight",
+   "CAGR (XIRR)": 0.0190163888902373,
+   "MDD": -0.549671482255006,
+   "Sortino Ratio": 0.0797889071861621,
+   "Avg. Cash Weight": 0.0365624050174914,
+   "Trigger Count": 0,
+   "Terminal Value": 223625.75242829853
+  },
+  {
+   "Period": "Main-analysis era 2009-2026",
+   "Strategy": "Invest every contribution",
+   "CAGR (XIRR)": 0.1503992821273225,
+   "MDD": -0.3200198024778464,
+   "Sortino Ratio": 1.077025178761146,
+   "Avg. Cash Weight": 0.0,
+   "Trigger Count": 12,
+   "Terminal Value": 3563683.3830021
+  },
+  {
+   "Period": "Main-analysis era 2009-2026",
+   "Strategy": "Cash reserve, 20 percent",
+   "CAGR (XIRR)": 0.1498386011777641,
+   "MDD": -0.3196215516643232,
+   "Sortino Ratio": 1.0848298240571004,
+   "Avg. Cash Weight": 0.0063584070848546,
+   "Trigger Count": 12,
+   "Terminal Value": 3413341.959733716
+  },
+  {
+   "Period": "Main-analysis era 2009-2026",
+   "Strategy": "Static cash, matched average weight",
+   "CAGR (XIRR)": 0.1450542099512194,
+   "MDD": -0.3087634826380565,
+   "Sortino Ratio": 1.072205777830364,
+   "Avg. Cash Weight": 0.0352814398156974,
+   "Trigger Count": 0,
+   "Terminal Value": 3310857.693218578
+  }
+ ],
+ "us_long_sensitivity": [
+  {
+   "Reserve allocation ratio": "10%",
+   "CAGR (XIRR)": 0.1072521432428943,
+   "MDD": -0.6168522682798581,
+   "Sortino Ratio": 0.5941100058557307
+  },
+  {
+   "Reserve allocation ratio": "20%",
+   "CAGR (XIRR)": 0.1063080319759086,
+   "MDD": -0.6118814185605754,
+   "Sortino Ratio": 0.5919854188530892
+  },
+  {
+   "Reserve allocation ratio": "30%",
+   "CAGR (XIRR)": 0.1060386529103929,
+   "MDD": -0.6120914590974333,
+   "Sortino Ratio": 0.5917999765168106
+  },
+  {
+   "Reserve allocation ratio": "40%",
+   "CAGR (XIRR)": 0.1057675488041873,
+   "MDD": -0.6123021208295691,
+   "Sortino Ratio": 0.5916090968444961
+  },
+  {
+   "Reserve allocation ratio": "50%",
+   "CAGR (XIRR)": 0.1054946975303606,
+   "MDD": -0.6125134065168428,
+   "Sortino Ratio": 0.5914124355688107
+  }
+ ]
+}
