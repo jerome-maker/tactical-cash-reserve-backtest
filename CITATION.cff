@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or the cached data, please cite the archived release."
-title: "Tactical cash reserve versus dollar-cost averaging: backtest code and cached data (Taiwan 0050, United States SPY)"
+title: "Tactical cash reserve versus dollar-cost averaging: backtest code and cached data (Taiwan 0050, United States SPY, South Africa STX40)"
 abstract: >-
   Reproducible backtest of a tactical cash reserve rule against investing every
   periodic contribution immediately. The rule diverts a fixed share of each
@@ -19,8 +19,8 @@ authors:
     given-names: Jerome Chih-Lung
     orcid: "https://orcid.org/0000-0002-0790-8826"
     affiliation: "National Taiwan University of Science and Technology"
-version: 1.0.0
-date-released: "2026-08-24"
+version: 1.1.0
+date-released: "2026-08-25"
 license: MIT
 repository-code: "https://github.com/jerome-maker/tactical-cash-reserve-backtest"
 doi: "10.5281/zenodo.22084641"
