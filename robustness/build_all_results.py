@@ -59,7 +59,8 @@ def main():
         equity_cagr = (price.iloc[-1] / price.iloc[0]) ** (52 / len(price)) - 1
         m = {"currency": cfg["currency"], "slug": cfg["slug"], "weeks": int(len(price)),
              "start": str(price.index.min().date()), "end": str(price.index.max().date()),
-             "mean_deposit_rate": num(rate.mean()), "equity_cagr": num(equity_cagr)}
+             "mean_deposit_rate": num(rate.mean()), "equity_cagr": num(equity_cagr),
+             "deposit_rate_min": num(rate.min()), "deposit_rate_max": num(rate.max())}
 
         bench = C.run_backtest(price, rate, alloc_ratio=0.0, weekly_contribution=wc)
         tact = C.run_backtest(price, rate, alloc_ratio=C.DEFAULT_CASH_ALLOC_RATIO,

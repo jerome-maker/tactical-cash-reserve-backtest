@@ -8,6 +8,8 @@
    "end": "2026-08-07",
    "mean_deposit_rate": 0.0035746688741721804,
    "equity_cagr": 0.18796872341238746,
+   "deposit_rate_min": 0.001,
+   "deposit_rate_max": 0.00825,
    "static_cash_weight": 0.04419471788867504,
    "static_realised_avg_cash": 0.04166354802917962,
    "main": {
@@ -210,6 +212,8 @@
    "end": "2026-08-07",
    "mean_deposit_rate": 0.0016272553071475105,
    "equity_cagr": 0.14633361277970236,
+   "deposit_rate_min": 0.0004,
+   "deposit_rate_max": 0.0046999999999999,
    "static_cash_weight": 0.04382147843950934,
    "static_realised_avg_cash": 0.04173988816441731,
    "main": {
@@ -412,6 +416,8 @@
    "end": "2026-08-07",
    "mean_deposit_rate": 0.06361177910772577,
    "equity_cagr": 0.1025950434110603,
+   "deposit_rate_min": 0.0374,
+   "deposit_rate_max": 0.1134,
    "static_cash_weight": 0.08641105884837665,
    "static_realised_avg_cash": 0.0859612080023457,
    "main": {
