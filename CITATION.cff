@@ -6,13 +6,30 @@ abstract: >-
   periodic contribution immediately. The rule diverts a fixed share of each
   contribution into an interest-bearing reserve and deploys the reserve in full
   the first time the market closes 15 percent or more below its trailing 52-week
-  high. One market-agnostic engine, one set of fixed parameters and one code path
-  are applied to Taiwan (Yuanta Taiwan Top 50 ETF, 0050) and the United States
-  (SPDR S&P 500 ETF Trust, SPY) over 2 January 2009 to 3 August 2026. The archive
-  contains the documented companion notebook, the cached total-return price series
-  and savings-deposit rate series with their raw sources, the publication figure
-  scripts, and a probability of backtest overfitting (CSCV) analysis at 10, 16 and
-  20 blocks.
+  high.
+
+  One market-agnostic engine, one set of fixed parameters and one code path are
+  applied to Taiwan (Yuanta Taiwan Top 50 ETF, 0050, with the Bank of Taiwan
+  savings deposit rate), the United States (SPDR S&P 500 ETF Trust, SPY, with the
+  FDIC national rate on savings deposits) and South Africa (Satrix 40, STX40, with
+  the IMF International Financial Statistics deposit rate) over 2 January 2009 to
+  3 August 2026, chosen because their deposit rates differ by more than an order of
+  magnitude. Setting the allocation ratio to zero reproduces the dollar-cost
+  averaging control from the same function, so any reported gap reflects the
+  allocation decision rather than a second implementation.
+
+  The archive contains the documented companion notebook that reproduces every
+  table and figure, the cached total-return price series and savings-deposit rate
+  series together with the raw source files they were compiled from, the
+  publication figure script, and a probability of backtest overfitting analysis by
+  combinatorially symmetric cross-validation at 10, 16 and 20 blocks with the
+  block-level diagnostics behind it.
+
+  Version 1.2.0 adds the significance testing the analysis previously lacked: the
+  Ledoit-Wolf studentized bootstrap for differences of Sharpe ratios with a HAC
+  standard error from the delta method, Newey-West t-tests on mean weekly return
+  differences, and within-market regressions of the weekly cost of the reserve on
+  the concurrent deposit rate, pooled with market fixed effects.
 type: software
 authors:
   - family-names: Chou
