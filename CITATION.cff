@@ -19,8 +19,8 @@ authors:
     given-names: Jerome Chih-Lung
     orcid: "https://orcid.org/0000-0002-0790-8826"
     affiliation: "National Taiwan University of Science and Technology"
-version: 1.1.0
-date-released: "2026-08-25"
+version: 1.2.0
+date-released: "2026-09-28"
 license: MIT
 repository-code: "https://github.com/jerome-maker/tactical-cash-reserve-backtest"
 doi: "10.5281/zenodo.22084641"
