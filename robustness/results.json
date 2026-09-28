@@ -1439,5 +1439,347 @@
    "MDD": -0.6125134065168428,
    "Sortino Ratio": 0.5914124355688107
   }
+ ],
+ "inference": [
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "Cash reserve vs benchmark",
+   "Test": "Ledoit-Wolf Sharpe difference (annualised)",
+   "Estimate": 0.0206196274023339,
+   "Std. error": 0.0163800320052441,
+   "Statistic": 1.258827052091987,
+   "p-value": 0.2044408881776355,
+   "CI lower": -0.0124688840924249,
+   "CI upper": 0.0537081388970927,
+   "Observations": 4999
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "Cash reserve vs benchmark",
+   "Test": "Newey-West mean weekly return difference (pp a year)",
+   "Estimate": -0.1816619235307918,
+   "Std. error": 0.3193803721931431,
+   "Statistic": -0.5687948895648887,
+   "p-value": 0.5696366189778885,
+   "CI lower": -0.8076474530293524,
+   "CI upper": 0.4443236059677685,
+   "Observations": 905
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "Static cash vs benchmark",
+   "Test": "Ledoit-Wolf Sharpe difference (annualised)",
+   "Estimate": -0.0021409012653466,
+   "Std. error": 0.0014804009030053,
+   "Statistic": -1.4461631717465513,
+   "p-value": 0.0840168033606721,
+   "CI lower": -0.0045922285968142,
+   "CI upper": 0.0003104260661209,
+   "Observations": 4999
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "Static cash vs benchmark",
+   "Test": "Newey-West mean weekly return difference (pp a year)",
+   "Estimate": -0.5774711280332776,
+   "Std. error": 0.1850268439064788,
+   "Statistic": -3.1210126911377163,
+   "p-value": 0.0018595410616712,
+   "CI lower": -0.940123742089976,
+   "CI upper": -0.2148185139765791,
+   "Observations": 905
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "Cash reserve vs benchmark",
+   "Test": "Ledoit-Wolf Sharpe difference (annualised)",
+   "Estimate": 0.0060800979135474,
+   "Std. error": 0.0121110639495997,
+   "Statistic": 0.5020283881622452,
+   "p-value": 0.6337267453490698,
+   "CI lower": -0.0185633614572975,
+   "CI upper": 0.0307235572843924,
+   "Observations": 4999
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "Cash reserve vs benchmark",
+   "Test": "Newey-West mean weekly return difference (pp a year)",
+   "Estimate": -0.2382763977176145,
+   "Std. error": 0.2196802625008026,
+   "Statistic": -1.0846509149484649,
+   "p-value": 0.2783613724212666,
+   "CI lower": -0.6688497122191879,
+   "CI upper": 0.1922969167839586,
+   "Observations": 918
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "Static cash vs benchmark",
+   "Test": "Ledoit-Wolf Sharpe difference (annualised)",
+   "Estimate": -0.0035458278754102,
+   "Std. error": 0.0009000312094576,
+   "Statistic": -3.939672133754984,
+   "p-value": 0.0,
+   "CI lower": -0.00501881704073,
+   "CI upper": -0.0020728387100904,
+   "Observations": 4999
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "Static cash vs benchmark",
+   "Test": "Newey-West mean weekly return difference (pp a year)",
+   "Estimate": -0.4817219337305773,
+   "Std. error": 0.1526633103046457,
+   "Statistic": -3.1554532177330747,
+   "p-value": 0.0016547438965326,
+   "CI lower": -0.7809420219276829,
+   "CI upper": -0.1825018455334716,
+   "Observations": 918
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "Cash reserve vs benchmark",
+   "Test": "Ledoit-Wolf Sharpe difference (annualised)",
+   "Estimate": -0.0093387086862553,
+   "Std. error": 0.0153192159057588,
+   "Statistic": -0.6096074853768936,
+   "p-value": 0.5087017403480696,
+   "CI lower": -0.0368025203966529,
+   "CI upper": 0.0181251030241423,
+   "Observations": 4999
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "Cash reserve vs benchmark",
+   "Test": "Newey-West mean weekly return difference (pp a year)",
+   "Estimate": -0.1792295100441484,
+   "Std. error": 0.3386620490071839,
+   "Statistic": -0.529228210156924,
+   "p-value": 0.5967752341256758,
+   "CI lower": -0.8430071260982289,
+   "CI upper": 0.4845481060099321,
+   "Observations": 918
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "Static cash vs benchmark",
+   "Test": "Ledoit-Wolf Sharpe difference (annualised)",
+   "Estimate": -0.0217849073648936,
+   "Std. error": 0.0017026326337931,
+   "Statistic": -12.79483720240982,
+   "p-value": 0.0,
+   "CI lower": -0.0248305365390669,
+   "CI upper": -0.0187392781907203,
+   "Observations": 4999
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "Static cash vs benchmark",
+   "Test": "Newey-West mean weekly return difference (pp a year)",
+   "Estimate": -0.3788957177878457,
+   "Std. error": 0.3033346084769293,
+   "Statistic": -1.249101511002373,
+   "p-value": 0.2119467051366943,
+   "CI lower": -0.9734315504026272,
+   "CI upper": 0.2156401148269358,
+   "Observations": 918
+  }
+ ],
+ "rate_regimes": [
+  {
+   "Market": "Taiwan (0050)",
+   "Regime": "Low deposit rate (wide spread)",
+   "Weeks": 474,
+   "Mean deposit rate (%)": 0.2010337552742616,
+   "Mean cost (pp a year)": -0.4328261486836275,
+   "Average cash weight (%)": 5.568632400648446
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Regime": "High deposit rate (narrow spread)",
+   "Weeks": 431,
+   "Mean deposit rate (%)": 0.5296403712296971,
+   "Mean cost (pp a year)": 0.0945604493751107,
+   "Average cash weight (%)": 2.5873820526787514
+  },
+  {
+   "Market": "United States (SPY)",
+   "Regime": "Low deposit rate (wide spread)",
+   "Weeks": 503,
+   "Mean deposit rate (%)": 0.0658345183436519,
+   "Mean cost (pp a year)": -0.3708373664059446,
+   "Average cash weight (%)": 4.7335649901976655
+  },
+  {
+   "Market": "United States (SPY)",
+   "Regime": "High deposit rate (narrow spread)",
+   "Weeks": 415,
+   "Mean deposit rate (%)": 0.2800240963855405,
+   "Mean cost (pp a year)": -0.0776061151869397,
+   "Average cash weight (%)": 3.457562658810872
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Regime": "Low deposit rate (wide spread)",
+   "Weeks": 461,
+   "Mean deposit rate (%)": 5.3201952277657245,
+   "Mean cost (pp a year)": -0.3996821211688948,
+   "Average cash weight (%)": 9.978113404402135
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Regime": "High deposit rate (narrow spread)",
+   "Weeks": 457,
+   "Mean deposit rate (%)": 7.400377461706781,
+   "Mean cost (pp a year)": 0.043152664416482,
+   "Average cash weight (%)": 7.177025617399728
+  }
+ ],
+ "rate_regressions": [
+  {
+   "Market": "Taiwan (0050)",
+   "Specification": "Regime dummy",
+   "term": "constant",
+   "coefficient": 0.0945604493751107,
+   "std_error": 0.359703092119881,
+   "t": 0.2628847275619078,
+   "p_value": 0.79269939464257
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Specification": "Regime dummy",
+   "term": "low rate dummy",
+   "coefficient": -0.527386598058738,
+   "std_error": 0.6375324044424087,
+   "t": -0.8272310464281339,
+   "p_value": 0.408324662956439
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Specification": "Deposit rate, within market",
+   "term": "constant",
+   "coefficient": -0.2772010004371248,
+   "std_error": 0.51389418553848,
+   "t": -0.5394126032904263,
+   "p_value": 0.5897351611114496
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Specification": "Deposit rate, within market",
+   "term": "deposit rate (pp)",
+   "coefficient": 0.2672194600782883,
+   "std_error": 0.5894246573521226,
+   "t": 0.4533564328284477,
+   "p_value": 0.6504010230873822
+  },
+  {
+   "Market": "United States (SPY)",
+   "Specification": "Regime dummy",
+   "term": "constant",
+   "coefficient": -0.0776061151869396,
+   "std_error": 0.4163910517646906,
+   "t": -0.1863779609529075,
+   "p_value": 0.852189641449236
+  },
+  {
+   "Market": "United States (SPY)",
+   "Specification": "Regime dummy",
+   "term": "low rate dummy",
+   "coefficient": -0.2932312512190048,
+   "std_error": 0.4642293023651622,
+   "t": -0.6316517499542704,
+   "p_value": 0.5277720619280004
+  },
+  {
+   "Market": "United States (SPY)",
+   "Specification": "Deposit rate, within market",
+   "term": "constant",
+   "coefficient": -0.3718105182689941,
+   "std_error": 0.2399066432180983,
+   "t": -1.549813349399343,
+   "p_value": 0.1215317338617061
+  },
+  {
+   "Market": "United States (SPY)",
+   "Specification": "Deposit rate, within market",
+   "term": "deposit rate (pp)",
+   "coefficient": 0.8209242755697321,
+   "std_error": 0.7385123821499454,
+   "t": 1.1115917558211692,
+   "p_value": 0.2666053879513188
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Specification": "Regime dummy",
+   "term": "constant",
+   "coefficient": 0.0431526644164818,
+   "std_error": 0.4712544796518422,
+   "t": 0.0915697702191871,
+   "p_value": 0.9270598912380944
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Specification": "Regime dummy",
+   "term": "low rate dummy",
+   "coefficient": -0.4428347855853764,
+   "std_error": 0.6704572026855855,
+   "t": -0.6604967234471582,
+   "p_value": 0.5091011820064049
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Specification": "Deposit rate, within market",
+   "term": "constant",
+   "coefficient": -1.8868481601093268,
+   "std_error": 1.7869307787021822,
+   "t": -1.0559156418357252,
+   "p_value": 0.2912851659711917
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Specification": "Deposit rate, within market",
+   "term": "deposit rate (pp)",
+   "coefficient": 0.2686728520437982,
+   "std_error": 0.2892777198233031,
+   "t": 0.9287713281475988,
+   "p_value": 0.3532522814201253
+  },
+  {
+   "Market": "Pooled",
+   "Specification": "Deposit rate, market fixed effects",
+   "term": "constant",
+   "coefficient": -1.9250132737383725,
+   "std_error": 1.677985234173904,
+   "t": -1.14721705205355,
+   "p_value": 0.2513921973794641
+  },
+  {
+   "Market": "Pooled",
+   "Specification": "Deposit rate, market fixed effects",
+   "term": "deposit rate (pp)",
+   "coefficient": 0.2746776646094726,
+   "std_error": 0.271758969076215,
+   "t": 1.010740015474665,
+   "p_value": 0.3122302228828959
+  },
+  {
+   "Market": "Pooled",
+   "Specification": "Deposit rate, market fixed effects",
+   "term": "FE: Taiwan (0050)",
+   "coefficient": 1.6451457385508237,
+   "std_error": 1.5962058910672787,
+   "t": 1.0306601095494152,
+   "p_value": 0.3027913034557179
+  },
+  {
+   "Market": "Pooled",
+   "Specification": "Deposit rate, market fixed effects",
+   "term": "FE: United States (SPY)",
+   "coefficient": 1.6420569445456206,
+   "std_error": 1.6503575986396573,
+   "t": 0.9949703905984504,
+   "p_value": 0.3198386189323521
+  }
  ]
 }

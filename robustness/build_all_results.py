@@ -169,7 +169,10 @@ def main():
     for name, path in (("bootstrap", "bootstrap_results.csv"),
                        ("deflated_sharpe", "deflated_sharpe.csv"),
                        ("us_long_sample", "us_long_sample_results.csv"),
-                       ("us_long_sensitivity", "us_long_sample_sensitivity.csv")):
+                       ("us_long_sensitivity", "us_long_sample_sensitivity.csv"),
+                       ("inference", "inference_results.csv"),
+                       ("rate_regimes", "rate_regime_results.csv"),
+                       ("rate_regressions", "rate_regime_regressions.csv")):
         if os.path.exists(path):
             res[name] = pd.read_csv(path).to_dict(orient="records")
 

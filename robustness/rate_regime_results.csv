@@ -1,0 +1,7 @@
+Market,Regime,Weeks,Mean deposit rate (%),Mean cost (pp a year),Average cash weight (%)
+Taiwan (0050),Low deposit rate (wide spread),474,0.20103375527426165,-0.4328261486836275,5.568632400648446
+Taiwan (0050),High deposit rate (narrow spread),431,0.5296403712296971,0.09456044937511077,2.5873820526787514
+United States (SPY),Low deposit rate (wide spread),503,0.0658345183436519,-0.37083736640594467,4.7335649901976655
+United States (SPY),High deposit rate (narrow spread),415,0.2800240963855405,-0.07760611518693973,3.457562658810872
+South Africa (STX40),Low deposit rate (wide spread),461,5.3201952277657245,-0.3996821211688948,9.978113404402137
+South Africa (STX40),High deposit rate (narrow spread),457,7.400377461706781,0.04315266441648204,7.177025617399728
