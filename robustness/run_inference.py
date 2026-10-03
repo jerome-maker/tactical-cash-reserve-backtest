@@ -164,9 +164,12 @@ def main():
         idx = ex_b.index.intersection(ex_t.index).intersection(ex_s.index)
         ex_b, ex_t, ex_s = ex_b[idx], ex_t[idx], ex_s[idx]
 
-        for name, ex in (("Cash reserve vs benchmark", ex_t),
-                         ("Static cash vs benchmark", ex_s)):
-            lw = ledoit_wolf_sharpe_test(ex.values, ex_b.values)
+        # The third row answers the question the first two only imply: holding the
+        # same average cash, does releasing it at a correction beat never releasing it?
+        for name, ex, ref in (("Cash reserve vs benchmark", ex_t, ex_b),
+                              ("Static cash vs benchmark", ex_s, ex_b),
+                              ("Cash reserve vs static cash", ex_t, ex_s)):
+            lw = ledoit_wolf_sharpe_test(ex.values, ref.values)
             rows.append({"Market": label, "Comparison": name,
                          "Test": "Ledoit-Wolf Sharpe difference (annualised)",
                          "Estimate": lw["diff"] * np.sqrt(52),
@@ -175,7 +178,7 @@ def main():
                          "CI lower": lw["ci_low"] * np.sqrt(52),
                          "CI upper": lw["ci_high"] * np.sqrt(52),
                          "Observations": lw["replicates"]})
-            ht = hac_mean_test((ex - ex_b).values)
+            ht = hac_mean_test((ex - ref).values)
             rows.append({"Market": label, "Comparison": name,
                          "Test": "Newey-West mean weekly return difference (pp a year)",
                          "Estimate": ht["mean"] * 5200,
