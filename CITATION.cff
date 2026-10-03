@@ -30,14 +30,22 @@ abstract: >-
   standard error from the delta method, Newey-West t-tests on mean weekly return
   differences, and within-market regressions of the weekly cost of the reserve on
   the concurrent deposit rate, pooled with market fixed effects.
+
+  Version 1.3.0 tests the tactical reserve directly against a static portfolio
+  holding the same average cash (positive in all three markets in point estimate,
+  +0.20 to +0.40 percentage points a year, and not statistically significant in
+  any), re-prices the reserve at short-term market rates (Bank of Taiwan one-month
+  time deposit, three-month United States Treasury bill, South African Treasury
+  bill), which leaves every conclusion unchanged, and measures the drawdown
+  improvement correction by correction.
 type: software
 authors:
   - family-names: Chou
     given-names: Jerome Chih-Lung
     orcid: "https://orcid.org/0000-0002-0790-8826"
     affiliation: "National Taiwan University of Science and Technology"
-version: 1.2.0
-date-released: "2026-09-28"
+version: 1.3.0
+date-released: "2026-10-04"
 license: MIT
 repository-code: "https://github.com/jerome-maker/tactical-cash-reserve-backtest"
 doi: "10.5281/zenodo.22084641"
