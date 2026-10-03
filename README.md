@@ -49,7 +49,11 @@ methodology and results.
 │   ├── twd_savings_rate.csv               #   Bank of Taiwan savings deposit rate, {date, annual_rate}
 │   ├── usd_savings_rate.csv               #   FDIC National Rate on Savings Deposits, {date, annual_rate}
 │   ├── a13rate.xls                        #   Raw source for the TWD rate (Central Bank of Taiwan)
-│   └── fdic_national_rate_archive.xlsx    #   Raw source for the pre-2021 portion of the USD rate (FDIC)
+│   ├── fdic_national_rate_archive.xlsx    #   Raw source for the pre-2021 portion of the USD rate (FDIC)
+│   ├── twd_one_month_deposit_rate.csv     #   Bank of Taiwan one-month time deposit, from a13rate.xls
+│   ├── usd_tbill_3m_rate.csv              #   Three-month Treasury bill (FRED TB3MS)
+│   ├── raw_fred_tb3ms_2008on.txt          #   Raw TB3MS download behind the file above
+│   └── zar_tbill_rate.csv                 #   South African Treasury bill (IMF IFS via DBnomics)
 ├── figures/
 │   ├── make_figures.py                    # Regenerates the publication-quality PDF figures below
 │   └── fig1-fig7_*.pdf                    # The manuscript's figures, as produced by that script
@@ -59,6 +63,10 @@ methodology and results.
 │   ├── run_static_benchmark.py            #   Static cash holding the same average weight
 │   ├── run_bootstrap.py                   #   Stationary block bootstrap + deflated Sharpe
 │   ├── run_us_long_sample.py              #   United States 1993-2026, incl. 2008
+│   ├── run_inference.py                   #   Ledoit-Wolf and Newey-West tests, incl. reserve vs static
+│   ├── run_rate_regimes.py                #   The mechanism within each market
+│   ├── run_cash_rate_sensitivity.py       #   Reserve re-priced at short-term market rates
+│   ├── run_drawdown_episodes.py           #   Drawdown improvement correction by correction
 │   ├── build_all_results.py               #   Writes results.json, the single source of numbers
 │   └── results.json                       #   Every figure the manuscript reports
 ├── pbo_analysis/

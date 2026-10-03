@@ -172,7 +172,9 @@ def main():
                        ("us_long_sensitivity", "us_long_sample_sensitivity.csv"),
                        ("inference", "inference_results.csv"),
                        ("rate_regimes", "rate_regime_results.csv"),
-                       ("rate_regressions", "rate_regime_regressions.csv")):
+                       ("rate_regressions", "rate_regime_regressions.csv"),
+                       ("cash_rate_sensitivity", "cash_rate_sensitivity.csv"),
+                       ("drawdown_episodes", "drawdown_episodes.csv")):
         if os.path.exists(path):
             res[name] = pd.read_csv(path).to_dict(orient="records")
 

@@ -1446,11 +1446,11 @@
    "Comparison": "Cash reserve vs benchmark",
    "Test": "Ledoit-Wolf Sharpe difference (annualised)",
    "Estimate": 0.0206196274023339,
-   "Std. error": 0.0163800320052441,
-   "Statistic": 1.258827052091987,
+   "Std. error": 0.0163800320052454,
+   "Statistic": 1.2588270520918876,
    "p-value": 0.2044408881776355,
-   "CI lower": -0.0124688840924249,
-   "CI upper": 0.0537081388970927,
+   "CI lower": -0.0124688840924221,
+   "CI upper": 0.0537081388970899,
    "Observations": 4999
   },
   {
@@ -1470,11 +1470,11 @@
    "Comparison": "Static cash vs benchmark",
    "Test": "Ledoit-Wolf Sharpe difference (annualised)",
    "Estimate": -0.0021409012653466,
-   "Std. error": 0.0014804009030053,
-   "Statistic": -1.4461631717465513,
+   "Std. error": 0.0014804009030126,
+   "Statistic": -1.446163171739459,
    "p-value": 0.0840168033606721,
-   "CI lower": -0.0045922285968142,
-   "CI upper": 0.0003104260661209,
+   "CI lower": -0.0045922285968436,
+   "CI upper": 0.0003104260661503,
    "Observations": 4999
   },
   {
@@ -1483,10 +1483,34 @@
    "Test": "Newey-West mean weekly return difference (pp a year)",
    "Estimate": -0.5774711280332776,
    "Std. error": 0.1850268439064788,
-   "Statistic": -3.1210126911377163,
+   "Statistic": -3.1210126911377154,
    "p-value": 0.0018595410616712,
-   "CI lower": -0.940123742089976,
-   "CI upper": -0.2148185139765791,
+   "CI lower": -0.9401237420899764,
+   "CI upper": -0.214818513976579,
+   "Observations": 905
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "Cash reserve vs static cash",
+   "Test": "Ledoit-Wolf Sharpe difference (annualised)",
+   "Estimate": 0.0227605286676805,
+   "Std. error": 0.0164753119575769,
+   "Statistic": 1.3814930318944942,
+   "p-value": 0.1604320864172834,
+   "CI lower": -0.0097071610030382,
+   "CI upper": 0.0552282183383994,
+   "Observations": 4999
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Comparison": "Cash reserve vs static cash",
+   "Test": "Newey-West mean weekly return difference (pp a year)",
+   "Estimate": 0.3958092045024857,
+   "Std. error": 0.2812544310195274,
+   "Statistic": 1.4072994443774818,
+   "p-value": 0.1596823406464145,
+   "CI lower": -0.155449480295788,
+   "CI upper": 0.9470678893007596,
    "Observations": 905
   },
   {
@@ -1494,11 +1518,11 @@
    "Comparison": "Cash reserve vs benchmark",
    "Test": "Ledoit-Wolf Sharpe difference (annualised)",
    "Estimate": 0.0060800979135474,
-   "Std. error": 0.0121110639495997,
-   "Statistic": 0.5020283881622452,
+   "Std. error": 0.0121110639495986,
+   "Statistic": 0.5020283881622934,
    "p-value": 0.6337267453490698,
-   "CI lower": -0.0185633614572975,
-   "CI upper": 0.0307235572843924,
+   "CI lower": -0.0185633614572971,
+   "CI upper": 0.030723557284392,
    "Observations": 4999
   },
   {
@@ -1507,9 +1531,9 @@
    "Test": "Newey-West mean weekly return difference (pp a year)",
    "Estimate": -0.2382763977176145,
    "Std. error": 0.2196802625008026,
-   "Statistic": -1.0846509149484649,
+   "Statistic": -1.084650914948465,
    "p-value": 0.2783613724212666,
-   "CI lower": -0.6688497122191879,
+   "CI lower": -0.6688497122191877,
    "CI upper": 0.1922969167839586,
    "Observations": 918
   },
@@ -1518,11 +1542,11 @@
    "Comparison": "Static cash vs benchmark",
    "Test": "Ledoit-Wolf Sharpe difference (annualised)",
    "Estimate": -0.0035458278754102,
-   "Std. error": 0.0009000312094576,
-   "Statistic": -3.939672133754984,
+   "Std. error": 0.0009000312094491,
+   "Statistic": -3.9396721337924814,
    "p-value": 0.0,
-   "CI lower": -0.00501881704073,
-   "CI upper": -0.0020728387100904,
+   "CI lower": -0.0050188170407012,
+   "CI upper": -0.0020728387101192,
    "Observations": 4999
   },
   {
@@ -1531,10 +1555,34 @@
    "Test": "Newey-West mean weekly return difference (pp a year)",
    "Estimate": -0.4817219337305773,
    "Std. error": 0.1526633103046457,
-   "Statistic": -3.1554532177330747,
+   "Statistic": -3.155453217733075,
    "p-value": 0.0016547438965326,
    "CI lower": -0.7809420219276829,
-   "CI upper": -0.1825018455334716,
+   "CI upper": -0.1825018455334717,
+   "Observations": 918
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "Cash reserve vs static cash",
+   "Test": "Ledoit-Wolf Sharpe difference (annualised)",
+   "Estimate": 0.0096259257889577,
+   "Std. error": 0.0124534544148849,
+   "Statistic": 0.7729522643494254,
+   "p-value": 0.4562912582516503,
+   "CI lower": -0.0158241723366863,
+   "CI upper": 0.0350760239146017,
+   "Observations": 4999
+  },
+  {
+   "Market": "United States (SPY)",
+   "Comparison": "Cash reserve vs static cash",
+   "Test": "Newey-West mean weekly return difference (pp a year)",
+   "Estimate": 0.2434455360129627,
+   "Std. error": 0.1834444704930192,
+   "Statistic": 1.327080262265124,
+   "p-value": 0.1848124629870411,
+   "CI lower": -0.1161056261533549,
+   "CI upper": 0.6029966981792804,
    "Observations": 918
   },
   {
@@ -1542,11 +1590,11 @@
    "Comparison": "Cash reserve vs benchmark",
    "Test": "Ledoit-Wolf Sharpe difference (annualised)",
    "Estimate": -0.0093387086862553,
-   "Std. error": 0.0153192159057588,
-   "Statistic": -0.6096074853768936,
+   "Std. error": 0.01531921590576,
+   "Statistic": -0.6096074853768431,
    "p-value": 0.5087017403480696,
-   "CI lower": -0.0368025203966529,
-   "CI upper": 0.0181251030241423,
+   "CI lower": -0.0368025203966545,
+   "CI upper": 0.0181251030241438,
    "Observations": 4999
   },
   {
@@ -1554,11 +1602,11 @@
    "Comparison": "Cash reserve vs benchmark",
    "Test": "Newey-West mean weekly return difference (pp a year)",
    "Estimate": -0.1792295100441484,
-   "Std. error": 0.3386620490071839,
-   "Statistic": -0.529228210156924,
+   "Std. error": 0.338662049007184,
+   "Statistic": -0.5292282101569239,
    "p-value": 0.5967752341256758,
-   "CI lower": -0.8430071260982289,
-   "CI upper": 0.4845481060099321,
+   "CI lower": -0.843007126098229,
+   "CI upper": 0.4845481060099322,
    "Observations": 918
   },
   {
@@ -1566,11 +1614,11 @@
    "Comparison": "Static cash vs benchmark",
    "Test": "Ledoit-Wolf Sharpe difference (annualised)",
    "Estimate": -0.0217849073648936,
-   "Std. error": 0.0017026326337931,
-   "Statistic": -12.79483720240982,
+   "Std. error": 0.0017026326338069,
+   "Statistic": -12.794837202305938,
    "p-value": 0.0,
-   "CI lower": -0.0248305365390669,
-   "CI upper": -0.0187392781907203,
+   "CI lower": -0.0248305365391079,
+   "CI upper": -0.0187392781906792,
    "Observations": 4999
   },
   {
@@ -1582,7 +1630,31 @@
    "Statistic": -1.249101511002373,
    "p-value": 0.2119467051366943,
    "CI lower": -0.9734315504026272,
-   "CI upper": 0.2156401148269358,
+   "CI upper": 0.2156401148269357,
+   "Observations": 918
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "Cash reserve vs static cash",
+   "Test": "Ledoit-Wolf Sharpe difference (annualised)",
+   "Estimate": 0.0124461986786382,
+   "Std. error": 0.0157916961061307,
+   "Statistic": 0.7881483151012706,
+   "p-value": 0.3762752550510102,
+   "CI lower": -0.0151702185916288,
+   "CI upper": 0.0400626159489053,
+   "Observations": 4999
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Comparison": "Cash reserve vs static cash",
+   "Test": "Newey-West mean weekly return difference (pp a year)",
+   "Estimate": 0.1996662077436972,
+   "Std. error": 0.2605834659050527,
+   "Statistic": 0.7662274620925045,
+   "p-value": 0.4437381628266064,
+   "CI lower": -0.3110773854302062,
+   "CI upper": 0.7104098009176008,
    "Observations": 918
   }
  ],
@@ -1780,6 +1852,262 @@
    "std_error": 1.6503575986396573,
    "t": 0.9949703905984504,
    "p_value": 0.3198386189323521
+  }
+ ],
+ "cash_rate_sensitivity": [
+  {
+   "Market": "Taiwan (0050)",
+   "Cash rate": "Savings deposit (paper)",
+   "mean_cash_rate": 0.0035746688741721,
+   "spread_pp": 18.43940545382153,
+   "avg_cash_weight": 0.0416635480292108,
+   "gross_price_pp": 0.7682510547553865,
+   "net_price_pp": 0.0761171249758524,
+   "recovered_share": 0.9009215483601408,
+   "static_cost_pp": 0.7206092086743915,
+   "mdd_gap_pp": 0.1726220880262863,
+   "tactical_vs_benchmark_pp": -0.1816619235307918,
+   "tactical_vs_benchmark_p": 0.5696366189778885,
+   "static_vs_benchmark_pp": -0.5774711280332776,
+   "static_vs_benchmark_p": 0.0018595410616712,
+   "tactical_vs_static_pp": 0.3958092045024857,
+   "tactical_vs_static_p": 0.1596823406464145
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Cash rate": "Bank of Taiwan one-month time deposit",
+   "mean_cash_rate": 0.0077964128035319,
+   "spread_pp": 18.017231060885543,
+   "avg_cash_weight": 0.0417050992892517,
+   "gross_price_pp": 0.7514104103116221,
+   "net_price_pp": 0.066184969047478,
+   "recovered_share": 0.9119190150426182,
+   "static_cost_pp": 0.7035294977760259,
+   "mdd_gap_pp": 0.1720372843501239,
+   "tactical_vs_benchmark_pp": -0.1756502936874457,
+   "tactical_vs_benchmark_p": 0.5823467288519706,
+   "static_vs_benchmark_pp": -0.5670755148949507,
+   "static_vs_benchmark_p": 0.0022665079102233,
+   "tactical_vs_static_pp": 0.3914252212075049,
+   "tactical_vs_static_p": 0.1639763717168598
+  },
+  {
+   "Market": "United States (SPY)",
+   "Cash rate": "Savings deposit (paper)",
+   "mean_cash_rate": 0.0016272553071475,
+   "spread_pp": 14.470635747255484,
+   "avg_cash_weight": 0.0417398881644237,
+   "gross_price_pp": 0.6040027177585557,
+   "net_price_pp": 0.2355945954816113,
+   "recovered_share": 0.6099444778064923,
+   "static_cost_pp": 0.604703604393475,
+   "mdd_gap_pp": 0.1694683312665423,
+   "tactical_vs_benchmark_pp": -0.2382763977176145,
+   "tactical_vs_benchmark_p": 0.2783613724212666,
+   "static_vs_benchmark_pp": -0.4817219337305773,
+   "static_vs_benchmark_p": 0.0016547438965326,
+   "tactical_vs_static_pp": 0.2434455360129627,
+   "tactical_vs_static_p": 0.1848124629870411
+  },
+  {
+   "Market": "United States (SPY)",
+   "Cash rate": "Three-month Treasury bill",
+   "mean_cash_rate": 0.0139520130576713,
+   "spread_pp": 13.238159972203098,
+   "avg_cash_weight": 0.0418505616234013,
+   "gross_price_pp": 0.5540244296971314,
+   "net_price_pp": 0.2118304613575011,
+   "recovered_share": 0.6176514066838126,
+   "static_cost_pp": 0.5280082294496252,
+   "mdd_gap_pp": 0.1704509622298733,
+   "tactical_vs_benchmark_pp": -0.2244492078331717,
+   "tactical_vs_benchmark_p": 0.3083323766519896,
+   "static_vs_benchmark_pp": -0.4363094829779633,
+   "static_vs_benchmark_p": 0.0044056011940831,
+   "tactical_vs_static_pp": 0.2118602751447915,
+   "tactical_vs_static_p": 0.2478341381996758
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Cash rate": "Savings deposit (paper)",
+   "mean_cash_rate": 0.0636117791077257,
+   "spread_pp": 3.898326430333453,
+   "avg_cash_weight": 0.0859612080023466,
+   "gross_price_pp": 0.3351048491389395,
+   "net_price_pp": -0.0467167768031823,
+   "recovered_share": 1.13940943237086,
+   "static_cost_pp": 0.2170326374685477,
+   "mdd_gap_pp": 3.205132689887225,
+   "tactical_vs_benchmark_pp": -0.1792295100441484,
+   "tactical_vs_benchmark_p": 0.5967752341256758,
+   "static_vs_benchmark_pp": -0.3788957177878457,
+   "static_vs_benchmark_p": 0.2119467051366943,
+   "tactical_vs_static_pp": 0.1996662077436972,
+   "tactical_vs_static_p": 0.4437381628266064
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Cash rate": "Treasury bill (IMF IFS)",
+   "mean_cash_rate": 0.0638195865070729,
+   "spread_pp": 3.87754569039874,
+   "avg_cash_weight": 0.0859804619664387,
+   "gross_price_pp": 0.3333931697564571,
+   "net_price_pp": -0.0463159728411502,
+   "recovered_share": 1.1389229805607113,
+   "static_cost_pp": 0.2054446688440861,
+   "mdd_gap_pp": 3.2150720658972176,
+   "tactical_vs_benchmark_pp": -0.1794626686667561,
+   "tactical_vs_benchmark_p": 0.5961166312186759,
+   "static_vs_benchmark_pp": -0.3723121527507113,
+   "static_vs_benchmark_p": 0.2204438577457177,
+   "tactical_vs_static_pp": 0.1928494840839551,
+   "tactical_vs_static_p": 0.4598896872926832
+  }
+ ],
+ "drawdown_episodes": [
+  {
+   "Market": "Taiwan (0050)",
+   "Episode": "2011-2012",
+   "Benchmark trough (pct)": -28.910181083168503,
+   "Reserve trough (pct)": -25.340820323279733,
+   "Improvement (pp)": 3.5693607598887738,
+   "First trigger": "2011-08-19"
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Episode": "2015-2016",
+   "Benchmark trough (pct)": -21.440336828469096,
+   "Reserve trough (pct)": -20.20200975315308,
+   "Improvement (pp)": 1.2383270753160147,
+   "First trigger": "2011-08-19"
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Episode": "Late 2018",
+   "Benchmark trough (pct)": -18.035808380562035,
+   "Reserve trough (pct)": -17.456783529185373,
+   "Improvement (pp)": 0.579024851376662,
+   "First trigger": "2011-08-19"
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Episode": "March 2020",
+   "Benchmark trough (pct)": -22.77179118213387,
+   "Reserve trough (pct)": -22.53251435120577,
+   "Improvement (pp)": 0.2392768309281017,
+   "First trigger": "2011-08-19"
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Episode": "2022",
+   "Benchmark trough (pct)": -34.583408575714216,
+   "Reserve trough (pct)": -34.41078648768793,
+   "Improvement (pp)": 0.1726220880262872,
+   "First trigger": "2011-08-19"
+  },
+  {
+   "Market": "Taiwan (0050)",
+   "Episode": "2025",
+   "Benchmark trough (pct)": -20.816215349242327,
+   "Reserve trough (pct)": -20.65408151145528,
+   "Improvement (pp)": 0.1621338377870458,
+   "First trigger": "2011-08-19"
+  },
+  {
+   "Market": "United States (SPY)",
+   "Episode": "2011-2012",
+   "Benchmark trough (pct)": -19.01078811418747,
+   "Reserve trough (pct)": -17.973517712648746,
+   "Improvement (pp)": 1.0372704015387235,
+   "First trigger": "2009-02-20"
+  },
+  {
+   "Market": "United States (SPY)",
+   "Episode": "2015-2016",
+   "Benchmark trough (pct)": -14.830635232202438,
+   "Reserve trough (pct)": -13.97964219282054,
+   "Improvement (pp)": 0.8509930393818976,
+   "First trigger": "2009-02-20"
+  },
+  {
+   "Market": "United States (SPY)",
+   "Episode": "Late 2018",
+   "Benchmark trough (pct)": -18.33834105401424,
+   "Reserve trough (pct)": -17.164949293956187,
+   "Improvement (pp)": 1.1733917600580526,
+   "First trigger": "2009-02-20"
+  },
+  {
+   "Market": "United States (SPY)",
+   "Episode": "March 2020",
+   "Benchmark trough (pct)": -32.11087356980832,
+   "Reserve trough (pct)": -31.941405238541776,
+   "Improvement (pp)": 0.1694683312665432,
+   "First trigger": "2009-02-20"
+  },
+  {
+   "Market": "United States (SPY)",
+   "Episode": "2022",
+   "Benchmark trough (pct)": -26.552507370262767,
+   "Reserve trough (pct)": -26.38118662220732,
+   "Improvement (pp)": 0.1713207480554466,
+   "First trigger": "2009-02-20"
+  },
+  {
+   "Market": "United States (SPY)",
+   "Episode": "2025",
+   "Benchmark trough (pct)": -17.531891599630388,
+   "Reserve trough (pct)": -17.38958099760971,
+   "Improvement (pp)": 0.1423106020206788,
+   "First trigger": "2009-02-20"
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Episode": "2011-2012",
+   "Benchmark trough (pct)": -15.580823303337976,
+   "Reserve trough (pct)": -13.00422996499676,
+   "Improvement (pp)": 2.5765933383412154,
+   "First trigger": "2009-02-27"
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Episode": "2015-2016",
+   "Benchmark trough (pct)": -17.823226891938592,
+   "Reserve trough (pct)": -15.112749821132844,
+   "Improvement (pp)": 2.7104770708057497,
+   "First trigger": "2009-02-27"
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Episode": "Late 2018",
+   "Benchmark trough (pct)": -21.613856830934157,
+   "Reserve trough (pct)": -17.927211169572153,
+   "Improvement (pp)": 3.686645661362,
+   "First trigger": "2009-02-27"
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Episode": "March 2020",
+   "Benchmark trough (pct)": -37.89128710377659,
+   "Reserve trough (pct)": -34.68615441388937,
+   "Improvement (pp)": 3.205132689887222,
+   "First trigger": "2009-02-27"
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Episode": "2022",
+   "Benchmark trough (pct)": -18.03588251911654,
+   "Reserve trough (pct)": -17.690239411227317,
+   "Improvement (pp)": 0.3456431078892237,
+   "First trigger": "2009-02-27"
+  },
+  {
+   "Market": "South Africa (STX40)",
+   "Episode": "2025",
+   "Benchmark trough (pct)": -8.353676727084135,
+   "Reserve trough (pct)": -8.215558457400618,
+   "Improvement (pp)": 0.1381182696835168,
+   "First trigger": "2009-02-27"
   }
  ]
 }

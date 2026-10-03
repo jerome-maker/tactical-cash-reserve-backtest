@@ -30,3 +30,8 @@ __pycache__/
 
 # Local run logs from the robustness scripts.
 robustness/bootstrap_log.txt
+
+# Local virtual environment and run logs
+.venv/
+robustness/build_log.txt
+robustness/inference_log.txt
